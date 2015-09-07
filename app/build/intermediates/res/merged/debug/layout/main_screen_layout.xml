@@ -25,4 +25,4 @@
         android:onClick="SubmitPollutionEvent"
         android:text="@string/submit_pollution_event" />
 
-</LinearLayout><!-- From: file:/Users/glenpeek/StudioProjects/Riverwatch/app/src/main/res/layout/main_screen_layout.xml -->
+</LinearLayout><!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/layout/main_screen_layout.xml -->
