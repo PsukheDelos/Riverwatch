@@ -6,7 +6,8 @@ import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 
-
+import java.sql.Timestamp;
+import java.util.Date;
 
 
 import nz.co.android.cowseye2.RiverWatchApplication;
@@ -193,6 +194,7 @@ public class SubmissionEvent implements Event{
 	@Override
 	public MultipartEntity makeEntity() {
 		MultipartEntity reqEntity = new MultipartEntity(HttpMultipartMode.BROWSER_COMPATIBLE);
+
 		JSONObject jsonObject;
 		try {
 			//convert data to JSON
@@ -209,9 +211,18 @@ public class SubmissionEvent implements Event{
 			if(fromGallery)
 				imagePath = myApplication.getRealPathFromURI(imageToPath);
 
-			reqEntity.addPart(Constants.FORM_POST_IMAGE, new FileBody(new File(imagePath)));
-			//add Data in JSON format
-			reqEntity.addPart(Constants.FORM_POST_DATA, new StringBody(jsonObject.toString()));
+//			public static final String FORM_POST_CHEMICALDATA = "chemicaldata";
+//			public static final String FORM_POST_BEFOREIMAGE = "before-image";
+//			public static final String FORM_POST_AFTERIMAGE = "after-image";
+
+			reqEntity.addPart(Constants.FORM_POST_BEFOREIMAGE, new FileBody(new File(imagePath)));
+			reqEntity.addPart(Constants.FORM_POST_AFTERIMAGE, new FileBody(new File(imagePath)));
+			reqEntity.addPart(Constants.FORM_POST_CHEMICALDATA, new StringBody(jsonObject.toString()));
+
+
+//			reqEntity.addPart(Constants.FORM_POST_IMAGE, new FileBody(new File(imagePath)));
+//			//add Data in JSON format
+//			reqEntity.addPart(Constants.FORM_POST_DATA, new StringBody(jsonObject.toString()));
 		}catch (UnsupportedEncodingException e1) {
 			Log.e(toString(), "UnsupportedEncodingException : "+e1);
 		}
@@ -221,23 +232,76 @@ public class SubmissionEvent implements Event{
 	/* Returns a JSON object representing the submission data */
 	private JSONObject makeJSONFromSubmissionData() throws JSONException {
 		JSONObject jsonObject = new JSONObject();
-		JSONObject jsonObjectGeoCoordinates = null;
-		JSONArray jsonObjectTags = new JSONArray();
-		//try and put geo coordinates in
-		if(geoCoordinates!=null){
-			jsonObjectGeoCoordinates = new JSONObject();
-			jsonObjectGeoCoordinates.put(Constants.SUBMISSION_JSON_GEO_LAT, geoCoordinates.latitude);
-			jsonObjectGeoCoordinates.put(Constants.SUBMISSION_JSON_GEO_LON, geoCoordinates.longitude);
-			jsonObject.put(Constants.SUBMISSION_JSON_GEO_LOCATION, jsonObjectGeoCoordinates);
-		}
-		//otherwise put in address
-		else{
-			jsonObject.put(Constants.SUBMISSION_JSON_ADDRESS, address);
-		}
 
-		jsonObject.put(Constants.SUBMISSION_JSON_DESCRIPTION, imageDescription);
-		jsonObjectTags.put(imageTag);
-		jsonObject.put(Constants.SUBMISSION_JSON_TAGS, jsonObjectTags);
+//		"IMEI": 123456789012345
+		jsonObject.put(Constants.SUBMISSION_JSON_IMEI, "TEST IMEI STRING");
+
+//		"geolocation": {"lat":-41.1, "long":174.7}
+		JSONObject jsonObjectGeoCoordinates = new JSONObject();
+		jsonObjectGeoCoordinates.put(Constants.SUBMISSION_JSON_GEO_LAT, geoCoordinates.latitude);
+		jsonObjectGeoCoordinates.put(Constants.SUBMISSION_JSON_GEO_LON, geoCoordinates.longitude);
+		jsonObject.put(Constants.SUBMISSION_JSON_GEO_LOCATION, jsonObjectGeoCoordinates);
+
+//		"timestamp":"2015-12-31T13:30:00+00:00"
+		jsonObject.put(Constants.SUBMISSION_JSON_TIMESTAMP, new Timestamp(new java.util.Date().getTime()));
+
+//		"before-chroma": {"nitrite":{"hue":1, "sat":2, "bri":3}, "nitrate":{"hue":4, "sat":5, "bri":6}}
+		JSONObject jsonObjectChroma = new JSONObject();
+		JSONObject jsonObjectNitrite = new JSONObject();
+		JSONObject jsonObjectNitrate = new JSONObject();
+
+		jsonObjectNitrite.put(Constants.SUBMISSION_JSON_HUE, 1);
+		jsonObjectNitrite.put(Constants.SUBMISSION_JSON_SAT, 2);
+		jsonObjectNitrite.put(Constants.SUBMISSION_JSON_BRI, 3);
+
+		jsonObjectNitrate.put(Constants.SUBMISSION_JSON_HUE, 4);
+		jsonObjectNitrate.put(Constants.SUBMISSION_JSON_SAT, 5);
+		jsonObjectNitrate.put(Constants.SUBMISSION_JSON_BRI, 6);
+
+		jsonObjectChroma.put(Constants.SUBMISSION_JSON_NITRITE, jsonObjectNitrite);
+		jsonObjectChroma.put(Constants.SUBMISSION_JSON_NITRATE, jsonObjectNitrate);
+		jsonObject.put(Constants.SUBMISSION_JSON_BEFORE_CHROMA, jsonObjectChroma);
+
+//		"after-chroma": {"nitrite":{"hue":7, "sat":8, "bri":9}, "nitrate":{"hue":10, "sat":11, "bri":12}}
+		jsonObjectChroma = new JSONObject();
+		jsonObjectNitrite = new JSONObject();
+		jsonObjectNitrate = new JSONObject();
+
+		jsonObjectNitrite.put(Constants.SUBMISSION_JSON_HUE, 7);
+		jsonObjectNitrite.put(Constants.SUBMISSION_JSON_SAT, 8);
+		jsonObjectNitrite.put(Constants.SUBMISSION_JSON_BRI, 9);
+
+		jsonObjectNitrate.put(Constants.SUBMISSION_JSON_HUE, 10);
+		jsonObjectNitrate.put(Constants.SUBMISSION_JSON_SAT, 11);
+		jsonObjectNitrate.put(Constants.SUBMISSION_JSON_BRI, 12);
+
+		jsonObjectChroma.put(Constants.SUBMISSION_JSON_NITRITE, jsonObjectNitrite);
+		jsonObjectChroma.put(Constants.SUBMISSION_JSON_NITRATE, jsonObjectNitrate);
+		jsonObject.put(Constants.SUBMISSION_JSON_AFTER_CHROMA, jsonObjectChroma);
+
+//		"analysis":{"nitrate-level":13, "nitrite-level":15}
+		JSONObject jsonObjectAnalysis = new JSONObject();
+		jsonObjectAnalysis.put(Constants.SUBMISSION_JSON_NITRATE_LEVEL, 13);
+		jsonObjectAnalysis.put(Constants.SUBMISSION_JSON_NITRITE_LEVEL, 15);
+		jsonObject.put(Constants.SUBMISSION_JSON_ANALYSIS, jsonObjectAnalysis);
+
+
+//		//try and put geo coordinates in
+//		if(geoCoordinates!=null){
+//			jsonObjectGeoCoordinates = new JSONObject();
+//			jsonObjectGeoCoordinates.put(Constants.SUBMISSION_JSON_GEO_LAT, geoCoordinates.latitude);
+//			jsonObjectGeoCoordinates.put(Constants.SUBMISSION_JSON_GEO_LON, geoCoordinates.longitude);
+//			jsonObject.put(Constants.SUBMISSION_JSON_GEO_LOCATION, jsonObjectGeoCoordinates);
+//		}
+//		//otherwise put in address
+//		else{
+//			jsonObject.put(Constants.SUBMISSION_JSON_ADDRESS, address);
+//		}
+//
+//		jsonObject.put(Constants.SUBMISSION_JSON_DESCRIPTION, imageDescription);
+//		jsonObjectTags.put(imageTag);
+//		jsonObject.put(Constants.SUBMISSION_JSON_TAGS, jsonObjectTags);
+
 		return jsonObject;
 	}
 
