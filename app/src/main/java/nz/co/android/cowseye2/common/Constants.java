@@ -47,16 +47,37 @@ public interface Constants {
 	/* Form post entities */
 	public static final String FORM_POST_IMAGE = "image";
 	public static final String FORM_POST_DATA = "data";
-//	public static final String FORM_POST_IMAGE_TAG = "form_post_tag";
+
+	public static final String FORM_POST_CHEMICALDATA = "chemicaldata";
+	public static final String FORM_POST_BEFOREIMAGE = "before-image";
+	public static final String FORM_POST_AFTERIMAGE = "after-image";
+
+
+
+	//	public static final String FORM_POST_IMAGE_TAG = "form_post_tag";
 //	public static final String FORM_POST_IMAGE_DESCRIPTION = "form_post_description";
 //	public static final String FORM_POST_ADDRESS = "form_post_address";
-	public static final String SUBMISSION_JSON_DESCRIPTION = "description";
-	public static final String SUBMISSION_JSON_TAGS = "tags";
+	public static final String SUBMISSION_JSON_IMEI = "IMEI";
 	public static final String SUBMISSION_JSON_GEO_LOCATION = "geolocation";
 	public static final String SUBMISSION_JSON_GEO_LAT = "lat";
 	public static final String SUBMISSION_JSON_GEO_LON = "long";
+	public static final String SUBMISSION_JSON_TIMESTAMP = "timestamp";
+	public static final String SUBMISSION_JSON_BEFORE_CHROMA = "before-chroma";
+	public static final String SUBMISSION_JSON_AFTER_CHROMA = "after-chroma";
+	public static final String SUBMISSION_JSON_NITRITE = "nitrite";
+	public static final String SUBMISSION_JSON_NITRATE = "nitrate";
+	public static final String SUBMISSION_JSON_HUE = "hue";
+	public static final String SUBMISSION_JSON_SAT = "sat";
+	public static final String SUBMISSION_JSON_BRI = "bri";
+	public static final String SUBMISSION_JSON_ANALYSIS = "analysis";
+	public static final String SUBMISSION_JSON_NITRATE_LEVEL = "nitrate-level";
+	public static final String SUBMISSION_JSON_NITRITE_LEVEL = "nitrite-level";
+
+
+	public static final String SUBMISSION_JSON_DESCRIPTION = "description";
+	public static final String SUBMISSION_JSON_TAGS = "tags";
 	public static final String SUBMISSION_JSON_ADDRESS = "physical_location";
-	
+
 	/* JSON keys */
 	public static final String JSON_INCIDENTS_KEY = "incidents";
 	
