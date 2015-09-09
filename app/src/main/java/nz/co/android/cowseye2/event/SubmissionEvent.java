@@ -74,6 +74,8 @@ public class SubmissionEvent implements Event{
 		this.myApplication = myApplication;
 		client = constructHttpClient();
 		httpPost = constructHttpPost();
+//		httpPost.addHeader("Content-type", "multipart/form-data");
+//		httpPost.addHeader("Accept", "image/jpg");
 	}
 
 	/** Constructs a HttpClient */
@@ -215,8 +217,17 @@ public class SubmissionEvent implements Event{
 //			public static final String FORM_POST_BEFOREIMAGE = "before-image";
 //			public static final String FORM_POST_AFTERIMAGE = "after-image";
 
-			reqEntity.addPart(Constants.FORM_POST_BEFOREIMAGE, new FileBody(new File(imagePath)));
-			reqEntity.addPart(Constants.FORM_POST_AFTERIMAGE, new FileBody(new File(imagePath)));
+			File file = new File(imagePath);
+			if(file.exists()){
+				FileBody bin = new FileBody(file, "image/jpeg");
+				reqEntity.addPart(Constants.FORM_POST_BEFOREIMAGE, bin);
+				reqEntity.addPart(Constants.FORM_POST_AFTERIMAGE, bin);
+			} else {
+				Log.w(SubmissionEvent.class.getSimpleName(), "File " + imagePath + " doesn't exist!");
+			}
+
+//			reqEntity.addPart(Constants.FORM_POST_BEFOREIMAGE, new FileBody(new File(imagePath)));
+//			reqEntity.addPart(Constants.FORM_POST_AFTERIMAGE, new FileBody(new File(imagePath)));
 			reqEntity.addPart(Constants.FORM_POST_CHEMICALDATA, new StringBody(jsonObject.toString()));
 
 
@@ -234,7 +245,7 @@ public class SubmissionEvent implements Event{
 		JSONObject jsonObject = new JSONObject();
 
 //		"IMEI": 123456789012345
-		jsonObject.put(Constants.SUBMISSION_JSON_IMEI, "TEST IMEI STRING");
+		jsonObject.put(Constants.SUBMISSION_JSON_IMEI, 3);
 
 //		"geolocation": {"lat":-41.1, "long":174.7}
 		JSONObject jsonObjectGeoCoordinates = new JSONObject();
@@ -243,7 +254,12 @@ public class SubmissionEvent implements Event{
 		jsonObject.put(Constants.SUBMISSION_JSON_GEO_LOCATION, jsonObjectGeoCoordinates);
 
 //		"timestamp":"2015-12-31T13:30:00+00:00"
-		jsonObject.put(Constants.SUBMISSION_JSON_TIMESTAMP, new Timestamp(new java.util.Date().getTime()));
+		java.util.Date dt = new java.util.Date();
+		java.text.SimpleDateFormat sdf =
+				new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String currentTime = sdf.format(dt);
+		currentTime = currentTime + "+00:00";
+		jsonObject.put(Constants.SUBMISSION_JSON_TIMESTAMP, currentTime);
 
 //		"before-chroma": {"nitrite":{"hue":1, "sat":2, "bri":3}, "nitrate":{"hue":4, "sat":5, "bri":6}}
 		JSONObject jsonObjectChroma = new JSONObject();
