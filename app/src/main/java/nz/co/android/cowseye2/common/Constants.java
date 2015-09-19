@@ -74,7 +74,7 @@ public interface Constants {
 	public static final String SUBMISSION_JSON_NITRITE_LEVEL = "nitrite-level";
 
 
-	public static final String SUBMISSION_JSON_DESCRIPTION = "description";
+	public static final String SUBMISSION_JSON_DESCRIPTION = "desc";
 	public static final String SUBMISSION_JSON_TAGS = "tags";
 	public static final String SUBMISSION_JSON_ADDRESS = "physical_location";
 

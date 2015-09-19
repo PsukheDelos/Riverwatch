@@ -75,8 +75,8 @@ public class MainScreenActivity extends ActionBarActivity implements
 		// we want to show the fragment they selected
 		if (getIntent().getExtras() != null) {
 			System.out.println("here2");
-			drawerPosition = (Integer) getIntent().getExtras().get(
-					"selectedItem");
+//			drawerPosition = (Integer) getIntent().getExtras().get(
+//					"selectedItem");
 			System.out.println("here3");
 		}
 		super.onCreate(savedInstanceState);
@@ -106,9 +106,8 @@ public class MainScreenActivity extends ActionBarActivity implements
 	}
 
 	/**
-	 * Checks the apps photo storage for any cached submissions, and upload them
+	 * Checks the apps photo storage for any cached submissions, and uploads them
 	 * if internet is available
-	 *
 	 */
 	private void checkForCachedSubmissions() {
 		if (myApplication.isOnline()) {
