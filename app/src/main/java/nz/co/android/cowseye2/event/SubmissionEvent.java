@@ -117,7 +117,7 @@ public class SubmissionEvent implements Event{
 		return response;
 	}
 
-	/** Processes the event and returns true if successfull, otherwise false */
+	/** Processes the event and returns true if successful, otherwise false */
 	@Override
 	public boolean processForSuccess() {
 		//add the created method body to the post request
@@ -220,8 +220,9 @@ public class SubmissionEvent implements Event{
 			File file = new File(imagePath);
 			if(file.exists()){
 				FileBody bin = new FileBody(file, "image/jpeg");
-				reqEntity.addPart(Constants.FORM_POST_BEFOREIMAGE, bin);
-				reqEntity.addPart(Constants.FORM_POST_AFTERIMAGE, bin);
+				reqEntity.addPart(Constants.FORM_POST_IMAGE, bin);
+//				reqEntity.addPart(Constants.FORM_POST_BEFOREIMAGE, bin);
+//				reqEntity.addPart(Constants.FORM_POST_AFTERIMAGE, bin);
 			} else {
 				Log.w(SubmissionEvent.class.getSimpleName(), "File " + imagePath + " doesn't exist!");
 			}
@@ -245,7 +246,7 @@ public class SubmissionEvent implements Event{
 		JSONObject jsonObject = new JSONObject();
 
 //		"IMEI": 123456789012345
-		jsonObject.put(Constants.SUBMISSION_JSON_IMEI, 3);
+		jsonObject.put(Constants.SUBMISSION_JSON_IMEI,  3);
 
 //		"geolocation": {"lat":-41.1, "long":174.7}
 		JSONObject jsonObjectGeoCoordinates = new JSONObject();
@@ -255,13 +256,12 @@ public class SubmissionEvent implements Event{
 
 //		"timestamp":"2015-12-31T13:30:00+00:00"
 		java.util.Date dt = new java.util.Date();
-		java.text.SimpleDateFormat sdf =
-				new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String currentTime = sdf.format(dt);
 		currentTime = currentTime + "+00:00";
 		jsonObject.put(Constants.SUBMISSION_JSON_TIMESTAMP, currentTime);
 
-//		"before-chroma": {"nitrite":{"hue":1, "sat":2, "bri":3}, "nitrate":{"hue":4, "sat":5, "bri":6}}
+//		"chroma": {"nitrite":{"hue":1, "sat":2, "bri":3}, "nitrate":{"hue":4, "sat":5, "bri":6}}
 		JSONObject jsonObjectChroma = new JSONObject();
 		JSONObject jsonObjectNitrite = new JSONObject();
 		JSONObject jsonObjectNitrate = new JSONObject();
@@ -276,24 +276,40 @@ public class SubmissionEvent implements Event{
 
 		jsonObjectChroma.put(Constants.SUBMISSION_JSON_NITRITE, jsonObjectNitrite);
 		jsonObjectChroma.put(Constants.SUBMISSION_JSON_NITRATE, jsonObjectNitrate);
-		jsonObject.put(Constants.SUBMISSION_JSON_BEFORE_CHROMA, jsonObjectChroma);
+		jsonObject.put(Constants.SUBMISSION_JSON_CHROMA, jsonObjectChroma);
+//		"before-chroma": {"nitrite":{"hue":1, "sat":2, "bri":3}, "nitrate":{"hue":4, "sat":5, "bri":6}}
+//		JSONObject jsonObjectChroma = new JSONObject();
+//		JSONObject jsonObjectNitrite = new JSONObject();
+//		JSONObject jsonObjectNitrate = new JSONObject();
+//
+//		jsonObjectNitrite.put(Constants.SUBMISSION_JSON_HUE, 1);
+//		jsonObjectNitrite.put(Constants.SUBMISSION_JSON_SAT, 2);
+//		jsonObjectNitrite.put(Constants.SUBMISSION_JSON_BRI, 3);
+//
+//		jsonObjectNitrate.put(Constants.SUBMISSION_JSON_HUE, 4);
+//		jsonObjectNitrate.put(Constants.SUBMISSION_JSON_SAT, 5);
+//		jsonObjectNitrate.put(Constants.SUBMISSION_JSON_BRI, 6);
+//
+//		jsonObjectChroma.put(Constants.SUBMISSION_JSON_NITRITE, jsonObjectNitrite);
+//		jsonObjectChroma.put(Constants.SUBMISSION_JSON_NITRATE, jsonObjectNitrate);
+//		jsonObject.put(Constants.SUBMISSION_JSON_BEFORE_CHROMA, jsonObjectChroma);
 
 //		"after-chroma": {"nitrite":{"hue":7, "sat":8, "bri":9}, "nitrate":{"hue":10, "sat":11, "bri":12}}
-		jsonObjectChroma = new JSONObject();
-		jsonObjectNitrite = new JSONObject();
-		jsonObjectNitrate = new JSONObject();
-
-		jsonObjectNitrite.put(Constants.SUBMISSION_JSON_HUE, 7);
-		jsonObjectNitrite.put(Constants.SUBMISSION_JSON_SAT, 8);
-		jsonObjectNitrite.put(Constants.SUBMISSION_JSON_BRI, 9);
-
-		jsonObjectNitrate.put(Constants.SUBMISSION_JSON_HUE, 10);
-		jsonObjectNitrate.put(Constants.SUBMISSION_JSON_SAT, 11);
-		jsonObjectNitrate.put(Constants.SUBMISSION_JSON_BRI, 12);
-
-		jsonObjectChroma.put(Constants.SUBMISSION_JSON_NITRITE, jsonObjectNitrite);
-		jsonObjectChroma.put(Constants.SUBMISSION_JSON_NITRATE, jsonObjectNitrate);
-		jsonObject.put(Constants.SUBMISSION_JSON_AFTER_CHROMA, jsonObjectChroma);
+//		jsonObjectChroma = new JSONObject();
+//		jsonObjectNitrite = new JSONObject();
+//		jsonObjectNitrate = new JSONObject();
+//
+//		jsonObjectNitrite.put(Constants.SUBMISSION_JSON_HUE, 7);
+//		jsonObjectNitrite.put(Constants.SUBMISSION_JSON_SAT, 8);
+//		jsonObjectNitrite.put(Constants.SUBMISSION_JSON_BRI, 9);
+//
+//		jsonObjectNitrate.put(Constants.SUBMISSION_JSON_HUE, 10);
+//		jsonObjectNitrate.put(Constants.SUBMISSION_JSON_SAT, 11);
+//		jsonObjectNitrate.put(Constants.SUBMISSION_JSON_BRI, 12);
+//
+//		jsonObjectChroma.put(Constants.SUBMISSION_JSON_NITRITE, jsonObjectNitrite);
+//		jsonObjectChroma.put(Constants.SUBMISSION_JSON_NITRATE, jsonObjectNitrate);
+//		jsonObject.put(Constants.SUBMISSION_JSON_AFTER_CHROMA, jsonObjectChroma);
 
 //		"analysis":{"nitrate-level":13, "nitrite-level":15}
 		JSONObject jsonObjectAnalysis = new JSONObject();
@@ -313,10 +329,13 @@ public class SubmissionEvent implements Event{
 //		else{
 //			jsonObject.put(Constants.SUBMISSION_JSON_ADDRESS, address);
 //		}
-//
-//		jsonObject.put(Constants.SUBMISSION_JSON_DESCRIPTION, imageDescription);
-//		jsonObjectTags.put(imageTag);
-//		jsonObject.put(Constants.SUBMISSION_JSON_TAGS, jsonObjectTags);
+
+//		"desc":"test description"
+		jsonObject.put(Constants.SUBMISSION_JSON_DESCRIPTION, imageDescription);
+//		"tags":"cow"
+		JSONArray jsonObjectTags = new JSONArray();
+		jsonObjectTags.put(imageTag);
+		jsonObject.put(Constants.SUBMISSION_JSON_TAGS, jsonObjectTags);
 
 		return jsonObject;
 	}

@@ -53,7 +53,8 @@ import com.google.android.gms.maps.model.LatLng;
  *
  */
 public class MainScreenActivity extends ActionBarActivity implements
-		NavigationDrawerFragment.NavigationDrawerCallbacks {
+
+	NavigationDrawerFragment.NavigationDrawerCallbacks {
 
 	private RiverWatchApplication myApplication;
 

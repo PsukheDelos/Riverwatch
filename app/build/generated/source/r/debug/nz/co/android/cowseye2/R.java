@@ -1342,8 +1342,21 @@ containing a value of this type.
         public static final int wrap_content=0x7f0c0025;
     }
     public static final class integer {
+        public static final int Nitrate0=0x7f090001;
+        public static final int Nitrate1=0x7f090002;
+        public static final int Nitrate10=0x7f090003;
+        public static final int Nitrate2=0x7f090004;
+        public static final int Nitrate20=0x7f090005;
+        public static final int Nitrate5=0x7f090006;
+        public static final int Nitrate50=0x7f090007;
+        public static final int Nitrite0=0x7f090008;
+        public static final int Nitrite0_15=0x7f090009;
+        public static final int Nitrite0_3=0x7f09000a;
+        public static final int Nitrite1=0x7f09000b;
+        public static final int Nitrite1_5=0x7f09000c;
+        public static final int Nitrite3=0x7f09000d;
         public static final int abc_max_action_buttons=0x7f090000;
-        public static final int google_play_services_version=0x7f090001;
+        public static final int google_play_services_version=0x7f09000e;
     }
     public static final class layout {
         public static final int abc_action_bar_decor=0x7f030000;
