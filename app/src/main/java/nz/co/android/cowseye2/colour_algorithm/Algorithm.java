@@ -1,4 +1,4 @@
-package cats;
+package nz.co.android.cowseye2.colour_algorithm;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -6,6 +6,8 @@ import android.widget.Toast;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import nz.co.android.cowseye2.R;
 
 /**
  * The main class indicating how to use the algorithm properly
@@ -45,7 +47,7 @@ public class Algorithm {
 		Map<Double, Double> nitriteAnalysis = nitriteRecog.processImage(balancedLeft);
 
 		//Print it out nicely
-		Double nitrateSum = 0.;
+		double nitrateSum = 0;
 		Double bestNitrateClass = null;
 		for(Map.Entry<Double, Double> nitrateClass : nitrateAnalysis.entrySet()){
 			//nitrateSum += 1 / nitrateClass.getValue();
@@ -54,7 +56,7 @@ public class Algorithm {
 			}
 		}
 
-		Double nitriteSum = 0.;
+		double nitriteSum = 0;
 		Double bestNitriteClass = null;
 		for(Map.Entry<Double, Double> nitriteClass : nitriteAnalysis.entrySet()){
 			//nitrateSum += 1 / nitrateClass.getValue();

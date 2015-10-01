@@ -1,4 +1,4 @@
-package cats;
+package nz.co.android.cowseye2.colour_algorithm;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;

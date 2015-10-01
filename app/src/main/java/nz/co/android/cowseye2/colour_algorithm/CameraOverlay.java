@@ -1,4 +1,4 @@
-package cats;
+package nz.co.android.cowseye2.colour_algorithm;
 
 import android.content.Context;
 import android.graphics.Canvas;
