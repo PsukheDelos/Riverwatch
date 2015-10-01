@@ -333,9 +333,9 @@ public class SubmissionEvent implements Event{
 //		"desc":"test description"
 		jsonObject.put(Constants.SUBMISSION_JSON_DESCRIPTION, imageDescription);
 //		"tags":"cow"
-		JSONArray jsonObjectTags = new JSONArray();
-		jsonObjectTags.put(imageTag);
-		jsonObject.put(Constants.SUBMISSION_JSON_TAGS, jsonObjectTags);
+//		JSONArray jsonObjectTags = new JSONArray();
+//		jsonObjectTags.put(imageTag);
+//		jsonObject.put(Constants.SUBMISSION_JSON_TAGS, jsonObjectTags);
 
 		return jsonObject;
 	}

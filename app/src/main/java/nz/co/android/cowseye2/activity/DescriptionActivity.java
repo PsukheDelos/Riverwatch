@@ -108,16 +108,16 @@ public class DescriptionActivity extends AbstractSubmissionActivity {
 			submissionEventBuilder.setImageDescription(imageDescription);
 			// checks if there has been any tags selected, else doesn't let the
 			// user progress through
-			if (numberOfSelections == 0) {
-				Toast toast = Toast
-						.makeText(DescriptionActivity.this,
-								getString(R.string.pleaseChooseTags),
-								Toast.LENGTH_LONG);
-				toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.LEFT, 0,
-						-15);
-				toast.show();
-
-			} else {
+//			if (numberOfSelections == 0) {
+//				Toast toast = Toast
+//						.makeText(DescriptionActivity.this,
+//								getString(R.string.pleaseChooseTags),
+//								Toast.LENGTH_LONG);
+//				toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.LEFT, 0,
+//						-15);
+//				toast.show();
+//
+//			} else {
 
 				Intent intent = new Intent(DescriptionActivity.this,
 						RecordLocationActivity.class);
@@ -126,7 +126,7 @@ public class DescriptionActivity extends AbstractSubmissionActivity {
 						| Intent.FLAG_ACTIVITY_NEW_TASK);
 				submissionEventBuilder.setImageTag(tosendtags);
 				startActivity(intent);
-			}
+//			}
 		}
 	}
 
