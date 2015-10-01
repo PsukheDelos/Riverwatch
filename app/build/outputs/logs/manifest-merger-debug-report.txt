@@ -74,6 +74,10 @@ uses-permission#android.permission.ACCESS_STATE
 ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:24:5-71
 	android:name
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:24:22-68
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:26:5-75
+	android:name
+		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:26:22-72
 uses-feature#0x00020000
 ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:30:5-32:35
 	android:glEsVersion
