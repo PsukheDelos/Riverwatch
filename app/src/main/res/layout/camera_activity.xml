@@ -5,18 +5,6 @@
     tools:context=".MainActivity"
     android:visibility="visible">
 
-    <!--<RelativeLayout-->
-        <!--android:id="@+id/containerImg"-->
-        <!--android:layout_width="fill_parent"-->
-        <!--android:layout_height="fill_parent" >-->
-
-        <!--<SurfaceView-->
-            <!--android:id="@+id/surfaceView1"-->
-            <!--android:layout_width="640px"-->
-            <!--android:layout_height="480px"-->
-            <!--android:layout_centerInParent="true" />-->
-
-    <!--</RelativeLayout>-->
     <RelativeLayout
     android:id="@+id/containerImg"
     android:layout_width="match_parent"
@@ -28,7 +16,7 @@
         android:layout_height="match_parent"
             android:layout_centerHorizontal="true" />
 
-        <com.example.colin.cats.CameraOverlay
+        <nz.co.android.riverwatch.colour_algorithm.CameraOverlay
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/stripOverlay"
@@ -55,50 +43,4 @@
         android:visibility="invisible"
         android:layout_marginBottom="20px" />
 
-    <!--<ImageView-->
-        <!--android:id="@+id/imageView1"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:src="@drawable/strip4"-->
-        <!--android:layout_alignParentLeft="false"-->
-        <!--android:layout_centerVertical="true"-->
-        <!--android:layout_gravity="left|center_vertical"-->
-        <!--android:cropToPadding="false" />-->
-
 </FrameLayout>
-<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--xmlns:tools="http://schemas.android.com/tools"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--tools:context=".MainActivity" >-->
-
-    <!--<RelativeLayout-->
-        <!--android:id="@+id/containerImg"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent" >-->
-
-        <!--<SurfaceView-->
-            <!--android:id="@+id/surfaceView1"-->
-            <!--android:layout_width="640px"-->
-            <!--android:layout_height="480px"-->
-            <!--android:layout_centerInParent="true" />-->
-
-        <!--<ImageView-->
-            <!--android:id="@+id/imageView1"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_alignBottom="@+id/surfaceView1"-->
-            <!--android:layout_alignLeft="@+id/surfaceView1"-->
-            <!--android:layout_marginLeft="20px"-->
-            <!--android:src="@drawable/mark3" />-->
-
-    <!--</RelativeLayout>-->
-
-    <!--<Button-->
-        <!--android:id="@+id/button1"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_gravity="right|center_vertical"-->
-        <!--android:background="@drawable/camera" />-->
-
-<!--</FrameLayout>-->

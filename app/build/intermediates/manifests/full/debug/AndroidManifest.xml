@@ -33,7 +33,7 @@
         android:required="true" />
 
     <application
-        android:name="nz.co.android.cowseye2.RiverWatchApplication"
+        android:name="nz.co.android.riverwatch.RiverWatchApplication"
         android:allowBackup="true"
         android:icon="@drawable/new_icon"
         android:label="@string/app_name"
@@ -46,7 +46,7 @@
             android:value="AIzaSyBLYH_0arYBDbXKBTka70rKTrwfADOYexE" />
 
         <activity
-            android:name="nz.co.android.cowseye2.activity.MainScreenActivity"
+            android:name="nz.co.android.riverwatch.activity.MainScreenActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/CustomStyle" >
@@ -57,13 +57,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="nz.co.android.cowseye2.activity.RecordLocationActivity"
+            android:name="nz.co.android.riverwatch.activity.RecordLocationActivity"
             android:label="@string/locationTitle"
             android:screenOrientation="portrait"
             android:theme="@style/CustomStyle" >
         </activity>
         <activity
-            android:name="nz.co.android.cowseye2.activity.DescriptionActivity"
+            android:name="nz.co.android.riverwatch.activity.DescriptionActivity"
             android:label="@string/description_title"
             android:screenOrientation="portrait"
             android:theme="@style/CustomStyle"
@@ -76,24 +76,24 @@
             android:theme="@style/CustomStyle" >
         </activity>
         <activity
-            android:name="nz.co.android.cowseye2.activity.PreviewActivity"
+            android:name="nz.co.android.riverwatch.activity.PreviewActivity"
             android:label="@string/preview_title"
             android:screenOrientation="portrait"
             android:theme="@style/CustomStyle" >
         </activity>
         <activity
-            android:name="nz.co.android.cowseye2.activity.TakePictureActivity"
+            android:name="nz.co.android.riverwatch.colour_algorithm.MainActivity"
             android:label="@string/take_picture_title"
             android:theme="@style/CustomStyle" >
         </activity>
         <activity
-            android:name="nz.co.android.cowseye2.activity.IncidentGalleryActivity"
+            android:name="nz.co.android.riverwatch.activity.IncidentGalleryActivity"
             android:label="@string/incident_view_gallery_title"
             android:screenOrientation="portrait"
             android:theme="@style/CustomStyle" >
         </activity>
         <activity
-            android:name="nz.co.android.cowseye2.activity.GridIncidentGalleryActivity"
+            android:name="nz.co.android.riverwatch.activity.GridIncidentGalleryActivity"
             android:label="@string/incident_view_grid_title"
             android:screenOrientation="portrait"
             android:theme="@style/CustomStyle" >

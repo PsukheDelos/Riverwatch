@@ -20,7 +20,7 @@
         android:background="@drawable/details_background"
         android:orientation="horizontal" >
 
-        <nz.co.android.cowseye2.view.RiverWatchGallery
+        <nz.co.android.riverwatch.view.RiverWatchGallery
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/incident_gallery"
             android:layout_width="fill_parent"
@@ -29,7 +29,7 @@
             android:soundEffectsEnabled="false"
             android:spacing="0dp"
             android:unselectedAlpha="1.0" >
-        </nz.co.android.cowseye2.view.RiverWatchGallery>
+        </nz.co.android.riverwatch.view.RiverWatchGallery>
     </FrameLayout>
 
     <!-- <ScrollView -->

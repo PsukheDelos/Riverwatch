@@ -42,35 +42,6 @@
             android:layout_gravity="center_horizontal"
             android:text="@string/preview_location" />
 
-        <TextView
-            android:id="@+id/PreviewImageTagTitle"
-            style="@style/field_title_style"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
-            android:text="@string/preview_imagetagtitle" />
-
-        <TextView
-            android:id="@+id/PreviewImageTag"
-            style="@style/text_view_style"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal"
-            android:text="@string/preview_imagetag" />
-
-        <TextView
-            android:id="@+id/PreviewDescriptionTitle"
-            style="@style/field_title_style"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
-            android:text="@string/preview_descriptiontitle" />
-
-        <TextView
-            android:id="@+id/PreviewDescriptionText"
-            style="@style/text_view_style"
-            android:layout_gravity="center_horizontal"
-            android:maxLines="5"
-            android:scrollbars="vertical"
-            android:text="@string/preview_description" />
-
         <Button
             android:id="@+id/submit_button"
             style="@style/riverWatchButtonStyle"

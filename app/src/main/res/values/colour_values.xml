@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <integer name="Nitrite1">0xFFFFBBD8</integer>
-    <integer name="Nitrite3">0xFFFF8CB9</integer>
-    <integer name="Nitrite1.5">0xFFFA98BB</integer>
-    <integer name="Nitrite0.3">0xFFFFEFFB</integer>
-    <integer name="Nitrite0">0xFFFFF5E9</integer>
-    <integer name="Nitrite0.15">0xFFFFF0FD</integer>
+    <color name="Nitrite1">#FFBBD8</color>
+    <color name="Nitrite3">#FF8CB9</color>
+    <color name="Nitrite1.5">#FA98BB</color>
+    <color name="Nitrite0.3">#FFEFFB</color>
+    <color name="Nitrite0">#FFF5E9</color>
+    <color name="Nitrite0.15">#FFF0FD</color>
 
-    <integer name="Nitrate10">0xFFF17DA0</integer>
-    <integer name="Nitrate0">0xFFFEDCB7</integer>
-    <integer name="Nitrate1">0xFFFFE8DE</integer>
-    <integer name="Nitrate2">0xFFF9CDC2</integer>
-    <integer name="Nitrate50">0xFFB61140</integer>
-    <integer name="Nitrate20">0xFFE54278</integer>
-    <integer name="Nitrate5">0xFFEDA6B0</integer>
+    <color name="Nitrate10">#F17DA0</color>
+    <color name="Nitrate0">#FEDCB7</color>
+    <color name="Nitrate1">#FFE8DE</color>
+    <color name="Nitrate2">#F9CDC2</color>
+    <color name="Nitrate50">#B61140</color>
+    <color name="Nitrate20">#E54278</color>
+    <color name="Nitrate5">#EDA6B0</color>
 
 </resources>

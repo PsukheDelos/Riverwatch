@@ -106,7 +106,7 @@ MERGED from [com.android.support:support-v4:20.0.0] /Users/glenpeek/Documents/Gi
 	android:theme
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:40:9-43
 	android:name
-		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:36:9-68
+		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:36:9-70
 meta-data#com.google.android.gms.version
 ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:41:9-43:69
 	android:value
@@ -119,7 +119,7 @@ ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManif
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:49:13-68
 	android:name
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:48:13-62
-activity#nz.co.android.cowseye2.activity.MainScreenActivity
+activity#nz.co.android.riverwatch.activity.MainScreenActivity
 ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:51:9-61:20
 	android:screenOrientation
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:54:13-49
@@ -128,7 +128,7 @@ ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManif
 	android:theme
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:55:13-47
 	android:name
-		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:52:13-78
+		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:52:13-80
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:56:13-60:29
 action#android.intent.action.MAIN
@@ -139,7 +139,7 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:59:17-77
 	android:name
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:59:27-74
-activity#nz.co.android.cowseye2.activity.RecordLocationActivity
+activity#nz.co.android.riverwatch.activity.RecordLocationActivity
 ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:62:9-67:20
 	android:screenOrientation
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:65:13-49
@@ -148,8 +148,8 @@ ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManif
 	android:theme
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:66:13-47
 	android:name
-		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:63:13-82
-activity#nz.co.android.cowseye2.activity.DescriptionActivity
+		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:63:13-84
+activity#nz.co.android.riverwatch.activity.DescriptionActivity
 ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:68:9-74:20
 	android:screenOrientation
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:71:13-49
@@ -160,7 +160,7 @@ ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManif
 	android:theme
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:72:13-47
 	android:name
-		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:69:13-79
+		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:69:13-81
 activity#nz.co.android.cowseye2.activity.SelectImageActivity
 ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:75:9-80:20
 	android:screenOrientation
@@ -171,7 +171,7 @@ ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManif
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:79:13-47
 	android:name
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:76:13-79
-activity#nz.co.android.cowseye2.activity.PreviewActivity
+activity#nz.co.android.riverwatch.activity.PreviewActivity
 ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:81:9-86:20
 	android:screenOrientation
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:84:13-49
@@ -180,16 +180,16 @@ ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManif
 	android:theme
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:85:13-47
 	android:name
-		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:82:13-75
-activity#nz.co.android.cowseye2.activity.TakePictureActivity
+		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:82:13-77
+activity#nz.co.android.riverwatch.colour_algorithm.MainActivity
 ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:87:9-91:20
 	android:label
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:89:13-55
 	android:theme
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:90:13-47
 	android:name
-		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:88:13-79
-activity#nz.co.android.cowseye2.activity.IncidentGalleryActivity
+		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:88:13-82
+activity#nz.co.android.riverwatch.activity.IncidentGalleryActivity
 ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:92:9-97:20
 	android:screenOrientation
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:95:13-49
@@ -198,8 +198,8 @@ ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManif
 	android:theme
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:96:13-47
 	android:name
-		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:93:13-83
-activity#nz.co.android.cowseye2.activity.GridIncidentGalleryActivity
+		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:93:13-85
+activity#nz.co.android.riverwatch.activity.GridIncidentGalleryActivity
 ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:98:9-103:20
 	android:screenOrientation
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:101:13-49
@@ -208,7 +208,7 @@ ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManif
 	android:theme
 		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:102:13-47
 	android:name
-		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:99:13-87
+		ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:99:13-89
 activity#nz.co.android.cowseye2.MainScreenActivity
 ADDED from /Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/AndroidManifest.xml:104:9-105:48
 	android:configChanges
