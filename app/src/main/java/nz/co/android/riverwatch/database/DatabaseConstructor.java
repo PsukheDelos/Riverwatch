@@ -50,12 +50,12 @@ public class DatabaseConstructor extends SQLiteOpenHelper{
 		}else{
 			//By calling this method an empty database will be created into the default system path
 			//of your application so we are going to be able to overwrite that database with our database.
-			this.getReadableDatabase();
-			try {
-				copyDataBase();
-			} catch (IOException e) {
-				throw new Error("Error copying database");
-			}
+//			this.getReadableDatabase();
+//			try {
+//				copyDataBase();
+//			} catch (IOException e) {
+//				throw new Error("Error copying database");
+//			}
 		}
 
 	}
