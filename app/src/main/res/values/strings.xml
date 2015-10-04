@@ -63,6 +63,8 @@
     <string name="preview_description"> Description</string>
     <string name="preview_imagetag"> Image Tag </string>
     <string name="preview_imagetagtitle"> Tag </string>
+    <string name="preview_nitratetitle">Nitrate</string>
+    <string name="preview_nitritetitle">Nitrite</string>
     <string name="map_not_ready">Map is not ready yet</string>
     <string name="no_preview_available">No Preview Available</string>
     <string name="select_image_from_gallery">Select Image From Gallery</string>

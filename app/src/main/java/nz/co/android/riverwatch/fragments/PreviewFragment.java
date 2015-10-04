@@ -133,42 +133,60 @@ public class PreviewFragment extends Fragment {
 		System.out.println("setLocationPreview_finish");
 	}
 
-	public void setDiscriptionPreview(
-			SubmissionEventBuilder submissionEventBuilder) {
-		System.out.println("setDiscriptionPreview_start");
+//	public void setDiscriptionPreview(
+//			SubmissionEventBuilder submissionEventBuilder) {
+//		System.out.println("setDiscriptionPreview_start");
+//		TextView description = (TextView) getActivity().findViewById(
+//				R.id.PreviewDescriptionText);
+//		description.setMovementMethod(new ScrollingMovementMethod());
+//		String descriptionText = submissionEventBuilder.getImageDescription();
+//		if (descriptionText.length() > maxLength)
+//			descriptionText = descriptionText.substring(0, maxLength);
+//		description.setText(submissionEventBuilder.getImageDescription());
+//		System.out.println("setDiscriptionPreview_finish");
+//	}
+
+	public void setNitratePreview(SubmissionEventBuilder submissionEventBuilder) {
+		System.out.println("setNitratePreview_start");
 		TextView description = (TextView) getActivity().findViewById(
-				R.id.PreviewDescriptionText);
+				R.id.PreviewNitrateValue);
 		description.setMovementMethod(new ScrollingMovementMethod());
-		String descriptionText = submissionEventBuilder.getImageDescription();
-		if (descriptionText.length() > maxLength)
-			descriptionText = descriptionText.substring(0, maxLength);
-		description.setText(submissionEventBuilder.getImageDescription());
-		System.out.println("setDiscriptionPreview_finish");
+		description.setText(submissionEventBuilder.submissionEvent.nitrate+"");
+		System.out.println("setNitratenPreview_finish");
 	}
 
-	public void setTagPreview(SubmissionEventBuilder submissionEventBuilder) {
-		System.out.println("setTagPreview_start");
-		TextView tag = (TextView) getActivity().findViewById(
-				R.id.PreviewImageTag);
-
-		StringBuffer st = new StringBuffer();
-
-		for (String s : submissionEventBuilder.getImageTag()) {
-			if (s != null) {
-				st.append(s);
-				st.append(", ");
-			}
-		}
-
-		String text = st.toString();
-		if (text.length() > 0)
-			text = text.substring(0, text.length() - 2);
-		System.out.println("Text value is   " + text);
-		String ntext = text.substring(0, text.length());
-		tag.setText(ntext);
-
-		tag.setOnClickListener(new Utils.StartNextActivityEventOnClickListener(
-				getActivity(), DescriptionActivity.class));
-		System.out.println("setTagPreview_finish");
+	public void setNitritePreview(SubmissionEventBuilder submissionEventBuilder) {
+		System.out.println("setNitritePreview_start");
+		TextView description = (TextView) getActivity().findViewById(
+				R.id.PreviewNitriteValue);
+		description.setMovementMethod(new ScrollingMovementMethod());
+		description.setText(submissionEventBuilder.submissionEvent.nitrite+"");
+		System.out.println("setNitritePreview_finish");
 	}
+
+//	public void setTagPreview(SubmissionEventBuilder submissionEventBuilder) {
+//		System.out.println("setTagPreview_start");
+//		TextView tag = (TextView) getActivity().findViewById(
+//				R.id.PreviewImageTag);
+//
+//		StringBuffer st = new StringBuffer();
+//
+//		for (String s : submissionEventBuilder.getImageTag()) {
+//			if (s != null) {
+//				st.append(s);
+//				st.append(", ");
+//			}
+//		}
+//
+//		String text = st.toString();
+//		if (text.length() > 0)
+//			text = text.substring(0, text.length() - 2);
+//		System.out.println("Text value is   " + text);
+//		String ntext = text.substring(0, text.length());
+//		tag.setText(ntext);
+//
+//		tag.setOnClickListener(new Utils.StartNextActivityEventOnClickListener(
+//				getActivity(), DescriptionActivity.class));
+//		System.out.println("setTagPreview_finish");
+//	}
 }

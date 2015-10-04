@@ -36,7 +36,6 @@ public class DatabaseConstructor extends SQLiteOpenHelper{
 	 */
 	public DatabaseConstructor(Context context) {
 		super(context, DB_NAME, null, versionNumber);
-		System.out.println(context.getFilesDir().getPath());
 		this.myContext = context;
 	}
 

@@ -122,11 +122,10 @@ public class PreviewActivity extends AbstractSubmissionActivity {
 		super.onResume();
 		Uri uri = Uri.parse(submissionEventBuilder.getImagePath().toString());
 		Log.d(toString(), "onResume " + uri.toString());
-		// Utils.RotateImageURI(image,uri);
 		f.setPreviewImageOn(uri, this);
 		f.setLocationPreview(submissionEventBuilder);
-		f.setDiscriptionPreview(submissionEventBuilder);
-		f.setTagPreview(submissionEventBuilder);
+		f.setNitratePreview(submissionEventBuilder);
+		f.setNitritePreview(submissionEventBuilder);
 	}
 
 	/**

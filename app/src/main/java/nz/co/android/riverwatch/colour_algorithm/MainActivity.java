@@ -124,12 +124,12 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
 
         Analysis analysis = Algorithm.processImages(left,middle,right, getApplicationContext());
 
-        Canvas leftcanvas = new Canvas(left);
-        Canvas midcanvas = new Canvas(middle);
-        Canvas rightcanvas = new Canvas(right);
-        leftcanvas.drawBitmap(left, 0f, 0f, null);
-        rightcanvas.drawBitmap(right, 0f, 0f, null);
-        midcanvas.drawBitmap(middle, 0f, 0f, null);
+//        Canvas leftcanvas = new Canvas(left);
+//        Canvas midcanvas = new Canvas(middle);
+//        Canvas rightcanvas = new Canvas(right);
+//        leftcanvas.drawBitmap(left, 0f, 0f, null);
+//        rightcanvas.drawBitmap(right, 0f, 0f, null);
+//        midcanvas.drawBitmap(middle, 0f, 0f, null);
 
         Canvas canvas = new Canvas(newImage);
         canvas.drawBitmap(cameraBitmap, 0f, 0f, null);
@@ -137,32 +137,32 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         File storagePath = new File(Environment.getExternalStorageDirectory() + "/PhotoAR/");
         storagePath.mkdirs();
 
-        File leftImage = new File(storagePath, Long.toString(System.currentTimeMillis()) + "-left.jpg");
-        File midImage = new File(storagePath, Long.toString(System.currentTimeMillis()) + "-mid.jpg");
-        File rightImage = new File(storagePath, Long.toString(System.currentTimeMillis()) + "-right.jpg");
+//        File leftImage = new File(storagePath, Long.toString(System.currentTimeMillis()) + "-left.jpg");
+//        File midImage = new File(storagePath, Long.toString(System.currentTimeMillis()) + "-mid.jpg");
+//        File rightImage = new File(storagePath, Long.toString(System.currentTimeMillis()) + "-right.jpg");
 
         File myImage = new File(storagePath, Long.toString(System.currentTimeMillis()) + ".jpg");
 
         analysis.path = Uri.fromFile(myImage).toString();
 
         try {
-            FileOutputStream out = new FileOutputStream(leftImage);
-            left.compress(Bitmap.CompressFormat.JPEG, 80, out);
-            out.flush();
-            out.close();
+//            FileOutputStream out = new FileOutputStream(leftImage);
+//            left.compress(Bitmap.CompressFormat.JPEG, 80, out);
+//            out.flush();
+//            out.close();
+//
+//            out = new FileOutputStream(rightImage);
+//            right.compress(Bitmap.CompressFormat.JPEG, 80, out);
+//            out.flush();
+//            out.close();
+//
+//            out = new FileOutputStream(midImage);
+//            middle.compress(Bitmap.CompressFormat.JPEG, 80, out);
+//            out.flush();
+//            out.close();
 
-            out = new FileOutputStream(rightImage);
-            right.compress(Bitmap.CompressFormat.JPEG, 80, out);
-            out.flush();
-            out.close();
-
-            out = new FileOutputStream(midImage);
-            middle.compress(Bitmap.CompressFormat.JPEG, 80, out);
-            out.flush();
-            out.close();
-
-            out = new FileOutputStream(myImage);
-            newImage.compress(Bitmap.CompressFormat.JPEG, 80, out);
+            FileOutputStream out = new FileOutputStream(myImage);
+            newImage.compress(Bitmap.CompressFormat.JPEG, 100, out);
             out.flush();
             out.close();
         }

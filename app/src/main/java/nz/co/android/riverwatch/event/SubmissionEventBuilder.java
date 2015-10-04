@@ -16,7 +16,7 @@ import android.net.Uri;
  */
 public class SubmissionEventBuilder {
 
-	private static SubmissionEvent submissionEvent;
+	public SubmissionEvent submissionEvent;
 	private static SubmissionEventBuilder builder = null;
 	private static RiverWatchApplication myApplication;
 

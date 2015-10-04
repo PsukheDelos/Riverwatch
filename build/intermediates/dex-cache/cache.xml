@@ -2,158 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/libs/httpcore-4.1.4.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="592ffbd778cbcc2e2dc5d162b35c16d6a538fea2">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/httpcore-4.1.4-52568fe52f8a3ccb7c9a6acdeea8bd5ccbfb0e7c.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-80a2eb38d2d33d6499d6e0f84f240c10e04e0728.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.8.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="42a1ee578b62fd1bd28b3307a679dc9ba0791587">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-5b8467ba195a386d3e8ed9da9704bd8ce8bf5a48.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.8.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="d11330ea68c0d964d30d5caed1f27e6b1488b189">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-68c0d0c291e836feee1c97cf5ae6c9cea6d07a73.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.8.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="c5cafb324568d954780abb858c25db7ce675ab3c">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-75d074ab04cc52ee7925bea143bcffccda64851b.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-245f33338999ab9758436058cbf1c88873cbe1ce.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/libs/commons-logging-1.1.1.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="5043bfebc3db072ed80fbd362e7caf00e885d8ae">
-        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/commons-logging-1.1.1-01452e0cb5b346fb4f0535d5f11ac33235d03e6d.jar" />
-    </item>
-    <item
         jar="/Users/glenpeek/StudioProjects/Riverwatch/app/libs/crashlytics.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="4f2010f8acf60827d2cd320e277a5d5eae45ed40">
         <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/crashlytics-4fe36021860063f268c5c9f82fea779489c5db24.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.8.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="c756d14e99d39471e99013a1e8fd2f3813ed42bf">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-10090beb9bf6ab04f0d7b8f3c09d5892c599c5ce.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.8.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="166e458ee3b5fb5fcff0f936df3f3a788e6c54f3">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-8aff8b30cf99c1ce1384ca9b06115af1c58854b3.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/libs/crashlytics.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="4f2010f8acf60827d2cd320e277a5d5eae45ed40">
-        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/crashlytics-43b1211a6ef56ac80b3b95d61ad8e38ea52f7a6e.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.8.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="2491ae1b2a848af1f4f0c795f3117c1bd6a1989f">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-773972689d4469283b9b0dc497c7f15bca6b66f7.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="c0c912d58c9468b1f9d9769c8975afdf2c85d681">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-a70d0b22eaae650a3755df60bd9be01fde62466f.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/libs/commons-codec-1.4.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="4216af16d38465bbab0f3dff8efa14204f7a399a">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/commons-codec-1.4-a7c3a69cebe29b1460ce21b9859160eece843ef1.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.8.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="6e85edfc9b5346d216e50ccef1f8e825504144a3">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-1cf509defb620b73ee6f039c195406903e103ec1.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/libs/internal_impl-20.0.0.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
-        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-31a16eaf8e4cacd4bb602c8e36b7f69d189cc0a6.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.8.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="4a135d56554069e5d0ff80e3220e887e57146ee5">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-914002d8593e112203952c587fa83798eca50b40.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/7.8.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="b99f0b78bbcb76b915bc6529a83b65d4d46990dd">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-b69420053d784ad430c6932a73985ec4f1962a08.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.8.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="98137c4d12c50923f5809852b1ef4d1c4e162081">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-6a7d9064cfbb2425ab23603fa3c266bae92477ac.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.8.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="0124ce31248c0e8acfa2b28283c6d1a4d76e73d2">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-6846e4c7619b88233518af9ad9f5ddf288907d53.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/libs/httpclient-cache-4.1.3.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="855f951e63b010a4b3e5486f73676d1c7f200c6d">
-        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/httpclient-cache-4.1.3-bf72b09ab04feaa51b0485e521e2185035ee9c2f.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/libs/httpclient-4.1.3.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="a260d242a42d8ccaec0c410084f9b62d47a7c2c5">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/httpclient-4.1.3-b0308fe125325c01680f8cc074fe6a1dc9e46418.jar" />
     </item>
     <item
         jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.8.0/jars/classes.jar"
@@ -163,11 +16,81 @@
         <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-da91fe5d0ff335a51d4e196cda83d5974efe5c5e.jar" />
     </item>
     <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.8.0/jars/classes.jar"
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.8.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="130b32ed466fa0f63efd4c7d6250ccd2ed506790">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-823621bf6a56130e21e568c2813bdcc7e1e863db.jar" />
+        sha1="c756d14e99d39471e99013a1e8fd2f3813ed42bf">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-10090beb9bf6ab04f0d7b8f3c09d5892c599c5ce.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/libs/crashlytics.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4f2010f8acf60827d2cd320e277a5d5eae45ed40">
+        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/crashlytics-43b1211a6ef56ac80b3b95d61ad8e38ea52f7a6e.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-80a2eb38d2d33d6499d6e0f84f240c10e04e0728.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/libs/httpcore-4.1.4.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="592ffbd778cbcc2e2dc5d162b35c16d6a538fea2">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/httpcore-4.1.4-52568fe52f8a3ccb7c9a6acdeea8bd5ccbfb0e7c.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="98137c4d12c50923f5809852b1ef4d1c4e162081">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-6a7d9064cfbb2425ab23603fa3c266bae92477ac.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4a135d56554069e5d0ff80e3220e887e57146ee5">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-914002d8593e112203952c587fa83798eca50b40.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="6e85edfc9b5346d216e50ccef1f8e825504144a3">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-1cf509defb620b73ee6f039c195406903e103ec1.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e23ea11124bb700eeddd4ab7aa848c615f493850">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-0044a97add8c2ee7e066c1937765dcc8651dd6ef.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="c0c912d58c9468b1f9d9769c8975afdf2c85d681">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-a70d0b22eaae650a3755df60bd9be01fde62466f.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="adebe28e0c0c05d34a3bfd76f3275bf4d8ff87b6">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-610a7c0fadd9412f6bf82cc852a04793e062c632.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-245f33338999ab9758436058cbf1c88873cbe1ce.jar" />
     </item>
     <item
         jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.8.0/jars/classes.jar"
@@ -177,32 +100,25 @@
         <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-78306c984459d37b464e193473728d04f3796431.jar" />
     </item>
     <item
-        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/jars/classes.jar"
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.8.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="3dfdf1db5ce5ea2999a5dcde8c8e650b02660059">
-        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-5f3741bdbe017cac61c671783b03b79b1a09b0f3.jar" />
+        sha1="d11330ea68c0d964d30d5caed1f27e6b1488b189">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-68c0d0c291e836feee1c97cf5ae6c9cea6d07a73.jar" />
     </item>
     <item
-        jar="/Users/glenpeek/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.8.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-c33126a224820a3d72aae97cc120eed27b4cccb6.jar" />
+        sha1="42a1ee578b62fd1bd28b3307a679dc9ba0791587">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-5b8467ba195a386d3e8ed9da9704bd8ce8bf5a48.jar" />
     </item>
     <item
-        jar="/Users/glenpeek/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.8.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
-        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-fbb31e5f6fc60fa7df5ac354ed23aaf2243c369d.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/libs/httpmime-4.1.3.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="e70d34d98f7f7f3b2b92105b9f2fe2a7a7184461">
-        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/httpmime-4.1.3-1bf911bf4d67b6775bb41c6adfb4f9dab646a78f.jar" />
+        sha1="c5cafb324568d954780abb858c25db7ce675ab3c">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-75d074ab04cc52ee7925bea143bcffccda64851b.jar" />
     </item>
     <item
         jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.8.0/jars/classes.jar"
@@ -212,27 +128,6 @@
         <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-d3fbd375ce12aa60a58eb88f5945c139db26c273.jar" />
     </item>
     <item
-        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/libs/httpcore-4.1.4.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="592ffbd778cbcc2e2dc5d162b35c16d6a538fea2">
-        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/httpcore-4.1.4-381c32039ec1b5cdeee08ff799e2e2af71f83b0b.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.8.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="edea92852b40eee716e910af8dad9eeaa58fb0e1">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-34524435cb71183f15fd69992f42d32126b436e9.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/libs/commons-codec-1.4.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="4216af16d38465bbab0f3dff8efa14204f7a399a">
-        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/commons-codec-1.4-baeb14e9ffe6725940c9bcc1f53833821ec8c5ce.jar" />
-    </item>
-    <item
         jar="/Users/glenpeek/StudioProjects/Riverwatch/app/libs/httpmime-4.1.3.jar"
         jumboMode="false"
         revision="23.0.0"
@@ -240,39 +135,18 @@
         <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/httpmime-4.1.3-92c0cae46f7e81910566c7d24e68af104635bdc1.jar" />
     </item>
     <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.8.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="cb6fab7a71fa9ec1f483d44c5fca65ab469d8aca">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-1dbf0a120010d6e94cecf5909a724cdd5a619e4d.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
-        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-87dc0eca1b2f755252d4ec4964aa6426bf232d5e.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/libs/commons-logging-1.1.1.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="5043bfebc3db072ed80fbd362e7caf00e885d8ae">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/commons-logging-1.1.1-28ada4fb67500bfb9cb32ffa99e82504acc533ae.jar" />
-    </item>
-    <item
-        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/libs/httpclient-4.1.3.jar"
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/libs/httpclient-4.1.3.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="a260d242a42d8ccaec0c410084f9b62d47a7c2c5">
-        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/httpclient-4.1.3-88c2a9ff120194c9cc7676bd762b1a9aa937d4ce.jar" />
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/httpclient-4.1.3-b0308fe125325c01680f8cc074fe6a1dc9e46418.jar" />
     </item>
     <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.8.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-b76fbb625e7a5ff5e70d92f837a7b440b1aae980.jar" />
+        sha1="edea92852b40eee716e910af8dad9eeaa58fb0e1">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-34524435cb71183f15fd69992f42d32126b436e9.jar" />
     </item>
     <item
         jar="/Users/glenpeek/StudioProjects/Riverwatch/app/libs/httpclient-cache-4.1.3.jar"
@@ -289,6 +163,41 @@
         <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-5ba6b8e6231ea8ca49f58d4d4bfe7ddbed720b4f.jar" />
     </item>
     <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="1ff30fa49c07a08c3035d7218a3efebf5680d522">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-1d3574bb11f6e5e329751cdd0de5646107e4134b.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/libs/httpclient-4.1.3.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="a260d242a42d8ccaec0c410084f9b62d47a7c2c5">
+        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/httpclient-4.1.3-88c2a9ff120194c9cc7676bd762b1a9aa937d4ce.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-b76fbb625e7a5ff5e70d92f837a7b440b1aae980.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/libs/commons-logging-1.1.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="5043bfebc3db072ed80fbd362e7caf00e885d8ae">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/commons-logging-1.1.1-28ada4fb67500bfb9cb32ffa99e82504acc533ae.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-fbb31e5f6fc60fa7df5ac354ed23aaf2243c369d.jar" />
+    </item>
+    <item
         jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
@@ -303,25 +212,116 @@
         <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-16e0db6251c93726d55bf1741bf112291a3c0eca.jar" />
     </item>
     <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.8.0/jars/classes.jar"
+        jar="/Users/glenpeek/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="e23ea11124bb700eeddd4ab7aa848c615f493850">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-0044a97add8c2ee7e066c1937765dcc8651dd6ef.jar" />
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-c33126a224820a3d72aae97cc120eed27b4cccb6.jar" />
     </item>
     <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.8.0/jars/classes.jar"
+        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="adebe28e0c0c05d34a3bfd76f3275bf4d8ff87b6">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-610a7c0fadd9412f6bf82cc852a04793e062c632.jar" />
+        sha1="3dfdf1db5ce5ea2999a5dcde8c8e650b02660059">
+        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-5f3741bdbe017cac61c671783b03b79b1a09b0f3.jar" />
     </item>
     <item
-        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.8.0/jars/classes.jar"
+        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/libs/httpcore-4.1.4.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="1ff30fa49c07a08c3035d7218a3efebf5680d522">
-        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-1d3574bb11f6e5e329751cdd0de5646107e4134b.jar" />
+        sha1="592ffbd778cbcc2e2dc5d162b35c16d6a538fea2">
+        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/httpcore-4.1.4-381c32039ec1b5cdeee08ff799e2e2af71f83b0b.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="0124ce31248c0e8acfa2b28283c6d1a4d76e73d2">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-6846e4c7619b88233518af9ad9f5ddf288907d53.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-87dc0eca1b2f755252d4ec4964aa6426bf232d5e.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-31a16eaf8e4cacd4bb602c8e36b7f69d189cc0a6.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/libs/commons-codec-1.4.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4216af16d38465bbab0f3dff8efa14204f7a399a">
+        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/commons-codec-1.4-baeb14e9ffe6725940c9bcc1f53833821ec8c5ce.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="cb6fab7a71fa9ec1f483d44c5fca65ab469d8aca">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-1dbf0a120010d6e94cecf5909a724cdd5a619e4d.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="130b32ed466fa0f63efd4c7d6250ccd2ed506790">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-823621bf6a56130e21e568c2813bdcc7e1e863db.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/libs/commons-logging-1.1.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="5043bfebc3db072ed80fbd362e7caf00e885d8ae">
+        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/commons-logging-1.1.1-01452e0cb5b346fb4f0535d5f11ac33235d03e6d.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="2491ae1b2a848af1f4f0c795f3117c1bd6a1989f">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-773972689d4469283b9b0dc497c7f15bca6b66f7.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="166e458ee3b5fb5fcff0f936df3f3a788e6c54f3">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-8aff8b30cf99c1ce1384ca9b06115af1c58854b3.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/libs/commons-codec-1.4.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4216af16d38465bbab0f3dff8efa14204f7a399a">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/commons-codec-1.4-a7c3a69cebe29b1460ce21b9859160eece843ef1.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="b99f0b78bbcb76b915bc6529a83b65d4d46990dd">
+        <dex dex="/Users/glenpeek/StudioProjects/Riverwatch/app/build/intermediates/pre-dexed/debug/classes-b69420053d784ad430c6932a73985ec4f1962a08.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/libs/httpmime-4.1.3.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e70d34d98f7f7f3b2b92105b9f2fe2a7a7184461">
+        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/httpmime-4.1.3-1bf911bf4d67b6775bb41c6adfb4f9dab646a78f.jar" />
+    </item>
+    <item
+        jar="/Users/glenpeek/Documents/GitHub/Riverwatch/app/libs/httpclient-cache-4.1.3.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="855f951e63b010a4b3e5486f73676d1c7f200c6d">
+        <dex dex="/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/pre-dexed/debug/httpclient-cache-4.1.3-bf72b09ab04feaa51b0485e521e2185035ee9c2f.jar" />
     </item>
 
 </items>

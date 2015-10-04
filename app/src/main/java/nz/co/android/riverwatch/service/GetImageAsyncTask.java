@@ -4,13 +4,6 @@ import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-
-
-
-
-
-
-
 import nz.co.android.riverwatch.RiverWatchApplication;
 import nz.co.android.riverwatch.activity.GridIncidentGalleryActivity;
 import nz.co.android.riverwatch.event.GetImageEvent;
