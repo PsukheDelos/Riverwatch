@@ -86,13 +86,13 @@
             android:windowSoftInputMode="stateHidden"
             android:padding="10dp"
             android:alpha="0.8"
-            android:background="@color/riverWatch_button_start_colour"
+            android:background="@color/header_end"
             android:gravity="top"
             android:hint="@string/description_labeltitle"
-            android:textColor="#010101"
+            android:textColor="#ffffff"
             android:textIsSelectable="false"
             android:editable="true"
-            android:textColorHint="#3f3f3f">
+            android:textColorHint="#bdbdbd">
         </EditText>
     </FrameLayout>
 

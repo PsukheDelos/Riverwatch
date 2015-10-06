@@ -16,7 +16,7 @@
     <string name="app_name">River Watch Chemical Analysis</string>
     <string name="capture_image">Capture Image</string>
     <string name="select_location">Select Location</string>
-    <string name="description_labeltitle"><i>Enter a description of your analysis result, including as lighting issues, anomalies or other information you feel can aid in reading this data</i> </string>
+    <string name="description_labeltitle"><i>Enter a description of your analysis result, including such as any lighting issues, anomalies or other information you feel can aid in reading this data</i> </string>
     <string name="tag_labeltitle"> Select Image Tags </string>
     <string name="submit">Submit Analysis Result</string>
     <string name="noPhotoAdded">No photo added</string>

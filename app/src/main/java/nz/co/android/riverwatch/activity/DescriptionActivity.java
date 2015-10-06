@@ -139,12 +139,12 @@ public class DescriptionActivity extends AbstractSubmissionActivity {
 	@Override
 	public void onResume(){
 		super.onResume();
-		String title = null;
 
-		title = "Nitrite";
+		String title;
+		title = getString(R.string.preview_nitritetitle);
 		TextView nitrite = (TextView)f.getActivity().findViewById(R.id.nitrite_value);
 		nitrite.setText(title + ": " + String.format("%.4f", submissionEventBuilder.submissionEvent.nitrite));
-		title = "Nitrate";
+		title = getString(R.string.preview_nitratetitle);
 		TextView nitrate = (TextView)f.getActivity().findViewById(R.id.nitrate_value);
 		nitrate.setText(title + ": " + String.format("%.4f", submissionEventBuilder.submissionEvent.nitrate));
 	}
