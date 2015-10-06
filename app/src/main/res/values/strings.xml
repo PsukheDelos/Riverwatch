@@ -29,7 +29,7 @@
     <string name="back">Back</string>
     <string name="done">Done</string>
     <string name="next">Next</string>
-    <string name="description_title">Describe Incident</string>
+    <string name="description_title">Describe Analysis</string>
     <string name="noDescriptionEntered">No Description Entered</string>
     <string name="please_select_a_image">Please select an Image</string>
     <string name="pleaseEnterDescription">Please enter a description of the problem</string>

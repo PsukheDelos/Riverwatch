@@ -17,6 +17,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
 
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -133,6 +134,19 @@ public class DescriptionActivity extends AbstractSubmissionActivity {
 
 			startActivity(i);
 		}
+	}
+
+	@Override
+	public void onResume(){
+		super.onResume();
+		String title = null;
+
+		title = "Nitrite";
+		TextView nitrite = (TextView)f.getActivity().findViewById(R.id.nitrite_value);
+		nitrite.setText(title + ": " + String.format("%.4f", submissionEventBuilder.submissionEvent.nitrite));
+		title = "Nitrate";
+		TextView nitrate = (TextView)f.getActivity().findViewById(R.id.nitrate_value);
+		nitrate.setText(title + ": " + String.format("%.4f", submissionEventBuilder.submissionEvent.nitrate));
 	}
 
 	public void onSectionAttached(int number) {

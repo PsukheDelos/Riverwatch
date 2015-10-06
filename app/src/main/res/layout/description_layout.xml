@@ -13,7 +13,7 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Please enter a description of your reading below:"
             android:id="@+id/textView"
             android:background="@color/header_end"
@@ -26,6 +26,46 @@
             android:alpha="0.8"
             android:singleLine="true"
             android:layout_gravity="center_horizontal|top" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/header_end"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nitrate"
+                android:id="@+id/nitrate_value"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="0dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nitrite:"
+                android:id="@+id/nitrite_value"
+                android:paddingRight="20dp"
+                android:gravity="center_vertical|right"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
     </FrameLayout>
 
     <FrameLayout
