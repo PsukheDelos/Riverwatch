@@ -6,10 +6,12 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 /**
  * Class for construction and copying of the Protext Time & Attendance Database
@@ -115,6 +117,7 @@ public class DatabaseConstructor extends SQLiteOpenHelper{
 	public void openDataBase() throws SQLException{
 		//Open the database
 		myDataBase = SQLiteDatabase.openDatabase(MY_PATH, null,SQLiteDatabase.NO_LOCALIZED_COLLATORS);
+		System.err.println(getTableAsString(myDataBase, "Incident"));
 	}
 
 	public SQLiteDatabase getDatabase(){
@@ -133,5 +136,23 @@ public class DatabaseConstructor extends SQLiteOpenHelper{
 
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+	}
+	public String getTableAsString(SQLiteDatabase db, String tableName) {
+		Log.d("Sql test: ", "getTableAsString called");
+		String tableString = String.format("Table %s:\n", tableName);
+		Cursor allRows  = db.rawQuery("SELECT * FROM " + tableName, null);
+		if (allRows.moveToFirst() ){
+			String[] columnNames = allRows.getColumnNames();
+			do {
+				for (String name: columnNames) {
+					tableString += String.format("%s: %s\n", name,
+							allRows.getString(allRows.getColumnIndex(name)));
+				}
+				tableString += "\n";
+
+			} while (allRows.moveToNext());
+		}
+
+		return tableString;
 	}
 }

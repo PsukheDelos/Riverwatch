@@ -232,12 +232,12 @@ public class PreviewActivity extends AbstractSubmissionActivity {
 												+ " "
 												+ currentEvent.getImagePath());
 
-										List<String> tags = currentEvent
-												.getImageTag();
+//										List<String> tags = currentEvent
+//												.getImageTag();
 
-										for (String s : tags) {
-											store = store + s + " ";
-										}
+//										for (String s : tags) {
+//											store = store + s + " ";
+//										}
 										exif.setAttribute("UserComment", store);
 										exif.saveAttributes();
 										Log.d("Preview", "Stop stuff");
