@@ -395,53 +395,19 @@ public class MainScreenActivity extends ActionBarActivity implements
 		super.onActivityResult(requestCode, resultCode, data);
 
 		// check if error here
+		if(data==null) return;
 		Analysis analysis = (Analysis) data.getSerializableExtra("analysis");
 
 		// Coming from capturing an image from native activity
 		if (requestCode == Constants.REQUEST_CODE_TAKE_PICTURE
 				&& resultCode == Activity.RESULT_OK) {
-//			Uri selectedImage = analysis.uri;
 
 			submissionEventBuilder = SubmissionEventBuilder
 					.getSubmissionEventBuilder(myApplication);
 
 
-//			getContentResolver().notifyChange(selectedImage, null);
 			ContentResolver cr = getContentResolver();
-//			Bitmap bitmap;
 			try {
-				// bitmap =
-				// android.provider.MediaStore.Images.Media.getBitmap(cr,selectedImage);
-//				BitmapFactory.Options ops = new BitmapFactory.Options();
-//				ops.inSampleSize = 4;
-//				bitmap = BitmapFactory.decodeFile(selectedImage.getPath()
-//						.toString(), ops);
-//
-//				ExifInterface exif = new ExifInterface(cameraFileUri.getPath());
-//				String orientString = exif
-//						.getAttribute(ExifInterface.TAG_ORIENTATION);
-//				int orientation = orientString != null ? Integer
-//						.parseInt(orientString)
-//						: ExifInterface.ORIENTATION_NORMAL;
-//				int rotationAngle = 0;
-//				if (orientation == ExifInterface.ORIENTATION_ROTATE_90)
-//					rotationAngle = 90;
-//				if (orientation == ExifInterface.ORIENTATION_ROTATE_180)
-//					rotationAngle = 180;
-//				if (orientation == ExifInterface.ORIENTATION_ROTATE_270)
-//					rotationAngle = 270;
-//				Matrix matrix = new Matrix();
-//				matrix.postRotate(rotationAngle);
-//				try {
-//					bitmap = Bitmap
-//							.createBitmap(bitmap, 0, 0, bitmap.getWidth(),
-//									bitmap.getHeight(), matrix, true);
-//				} catch (Exception e) {
-//					// TODO Auto-generated catch block
-//					e.printStackTrace();
-//				}
-//				cameraFileUri = Uri.parse(saveBitmapToDisk(bitmap));
-//				deleteIntentFile();
 				submissionEventBuilder.setImagePath(Uri.parse(analysis.path));
 				submissionEventBuilder.setNitrate(analysis.nitrate);
 				submissionEventBuilder.setNitrite(analysis.nitrite);
