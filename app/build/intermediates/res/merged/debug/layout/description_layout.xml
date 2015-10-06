@@ -5,31 +5,45 @@
     android:background="@drawable/new_river_bg"
     android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/button"
-        style="@style/riverWatchButtonStyle"
-        android:layout_width="fill_parent"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="SelectTagButtonClick"
-        android:text="Select Image Tags"
-        android:visibility="gone">
-    </Button>
+        android:padding="20dp">
 
-    <TextView
-        android:id="@+id/EnterDescriptionLabel"
-        style="@style/text_view_style"
-        android:paddingTop="10dp"
-        android:text="@string/description_labeltitle" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Please enter a description for your reading below:"
+            android:id="@+id/textView"
+            android:background="#0e788f"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="italic"
+            android:typeface="sans"
+            android:alpha="0.8"
+            android:singleLine="true" />
+
+    </FrameLayout>
 
     <EditText
         android:id="@+id/descriptionText"
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="top"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
         android:inputType="textMultiLine"
         android:singleLine="false"
-        android:windowSoftInputMode="stateHidden" >
+        android:windowSoftInputMode="stateHidden"
+        android:padding="20dp"
+        android:alpha="0.8"
+        android:background="@color/riverWatch_button_start_colour"
+        android:gravity="top"
+        android:hint="@string/description_labeltitle"
+        android:textColor="#ffffff"
+        android:textIsSelectable="false"
+        android:editable="true">
     </EditText>
 
-</LinearLayout><!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/layout/description_layout.xml -->
+</LinearLayout><!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/layout/description_layout.xml -->

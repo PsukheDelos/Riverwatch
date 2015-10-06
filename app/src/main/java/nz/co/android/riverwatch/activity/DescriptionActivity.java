@@ -1,27 +1,22 @@
 package nz.co.android.riverwatch.activity;
 
-import java.util.ArrayList;
-import java.util.List;
 
 import nz.co.android.cowseye2.R;
 import nz.co.android.riverwatch.fragments.DescriptionFragment;
 import nz.co.android.riverwatch.fragments.NavigationDrawerFragment;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.DialogInterface;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.content.IntentCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
-import android.util.Log;
+
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.WindowManager;
-import android.widget.AdapterView;
+
 import android.widget.Toast;
 
 /**
@@ -35,23 +30,13 @@ import android.widget.Toast;
 public class DescriptionActivity extends AbstractSubmissionActivity {
 
 	private String imageDescription;
-	private String imageTag;
-	protected CharSequence[] _options = { "Cow", "Dog", "Goat", "Horse",
-			"Litter", "Pollution", "River", "Sheep", "Stock" };
-	protected boolean[] _selections = new boolean[_options.length];
-	private List<String> imageTags;
-
-	private List<String> tosendtags;
-	private int numberOfSelections = 0;
 
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		imageTags = new ArrayList<String>();
 
-		tosendtags = new ArrayList<String>();
 		setupDrawer();
 		setupUI();
 	}
@@ -89,97 +74,16 @@ public class DescriptionActivity extends AbstractSubmissionActivity {
 		// description has been entered and recognized by user and this
 		// will move the application onto the recorfd location activity
 		else {
-			tosendtags.clear();
-			for (int i = 0; i < _options.length; i++) {
-				Log.i("ME", _options[i] + " selected: " + _selections[i]);
-				if (_selections[i]) {
-					tosendtags.add((String) _options[i]);
-					numberOfSelections = numberOfSelections + 1; // used to keep
-																	// count of
-																	// if any
-																	// tags are
-																	// selected
-																	// or not
-				}
-			}
-
 			imageDescription = f.getText();
 			submissionEventBuilder.setImageDescription(imageDescription);
-			// checks if there has been any tags selected, else doesn't let the
-			// user progress through
-//			if (numberOfSelections == 0) {
-//				Toast toast = Toast
-//						.makeText(DescriptionActivity.this,
-//								getString(R.string.pleaseChooseTags),
-//								Toast.LENGTH_LONG);
-//				toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.LEFT, 0,
-//						-15);
-//				toast.show();
-//
-//			} else {
 
 				Intent intent = new Intent(DescriptionActivity.this,
 						RecordLocationActivity.class);
 				intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
 				intent.setFlags(IntentCompat.FLAG_ACTIVITY_TASK_ON_HOME
 						| Intent.FLAG_ACTIVITY_NEW_TASK);
-				submissionEventBuilder.setImageTag(tosendtags);
 				startActivity(intent);
 //			}
-		}
-	}
-
-	public void onItemSelected(AdapterView<?> parent, View view, int pos,
-			long id) {
-
-		System.out.println("Item was selected");
-		// An item was selected. You can retrieve the selected item using
-		imageTag = (String) parent.getItemAtPosition(pos);
-		submissionEventBuilder.setImageTag(imageTags);
-	}
-
-	public void onNothingSelected(AdapterView<?> parent) {
-		// Another interface callback
-	}
-
-	public void SelectTagButtonClick(View view) {
-		showDialog(0);
-	}
-
-	@Override
-	protected Dialog onCreateDialog(int id) {
-		return new AlertDialog.Builder(this)
-				.setTitle("Image Tags")
-				.setMultiChoiceItems(_options, _selections,
-						new DialogSelectionClickHandler())
-				.setPositiveButton("OK", new DialogButtonClickHandler())
-				.create();
-	}
-
-	public class DialogSelectionClickHandler implements
-			DialogInterface.OnMultiChoiceClickListener {
-		@Override
-		public void onClick(DialogInterface dialog, int clicked,
-				boolean selected) {
-			Log.i("ME", _options[clicked] + " selected: " + selected);
-		}
-	}
-
-	public class DialogButtonClickHandler implements
-			DialogInterface.OnClickListener {
-		@Override
-		public void onClick(DialogInterface dialog, int clicked) {
-			switch (clicked) {
-			case DialogInterface.BUTTON_POSITIVE:
-				printSelectedImageTags();
-				break;
-			}
-		}
-	}
-
-	protected void printSelectedImageTags() {
-		for (int i = 0; i < _options.length; i++) {
-			Log.i("ME", _options[i] + " selected: " + _selections[i]);
 		}
 	}
 

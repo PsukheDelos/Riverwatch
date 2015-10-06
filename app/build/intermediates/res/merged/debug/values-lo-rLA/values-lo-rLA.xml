@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-lo-rLA/values.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values-lo-rLA/values.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"ກັບໄປໜ້າຫຼັກ"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"ຂຶ້ນເທິງ"</string>
@@ -15,7 +15,7 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"ຊອກຫາດ້ວຍສຽງ"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"ແບ່ງປັນກັບ"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"ແບ່ງ​ປັນ​ກັບ​ %s"</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-lo-rLA/auth_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-lo-rLA/auth_strings.xml -->
     <eat-comment/>
     <string msgid="3983201110833868073" name="auth_client_needs_enabling_title">"ແອັບພລິເຄຊັນຕ້ອງການເປີດນຳໃຊ້ Google Play Services."</string>
     <string msgid="7999585836145154206" name="auth_client_needs_installation_title">"ແອັບພລິເຄຊັນຕ້ອງການໃຫ້ຕິດຕັ້ງ Google Play Services."</string>
@@ -23,7 +23,7 @@
     <string msgid="3635065018897986478" name="auth_client_play_services_err_notification_msg">"ບໍລິການ Google Play ຜິດພາດ"</string>
     <string msgid="6304135633531965756" name="auth_client_requested_by_msg">"ຮ້ອງຂໍໂດຍ <ns1:g id="APP_NAME">%1$s</ns1:g>"</string>
     <string msgid="2534454398764507874" name="auth_client_using_bad_version_title">"ແອັບພລິເຄຊັນໄດ້ພະຍາຍາມໃຊ້ Google Play Services ເວີຊັນທີ່ບໍ່ສາມາດໃຊ້ໄດ້."</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-lo-rLA/common_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values-lo-rLA/common_strings.xml -->
     <eat-comment/>
     <string msgid="4181637455539816337" name="common_google_play_services_enable_button">"ເປີດໃຊ້ບໍລິການ Google Play"</string>
     <string msgid="7627896071867667758" name="common_google_play_services_enable_text">"ແອັບຯນີ້ຈະບໍ່ສາມາດເຮັດວຽກໄດ້ຈົນກວ່າທ່ານຈະເປີດໃຊ້ບໍລິການ Google Play"</string>

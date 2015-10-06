@@ -7,4 +7,4 @@
     android:divider="@android:color/white"
     android:dividerHeight="1dp"
     tools:context="com.example.test.NavigationDrawerFragment" />
-<!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/layout/fragment_navigation_drawer.xml -->
+<!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/layout/fragment_navigation_drawer.xml -->

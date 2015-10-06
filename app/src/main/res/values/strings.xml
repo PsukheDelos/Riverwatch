@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="title_section1">Submit Incident</string>
+    <string name="title_section1">WaiNZ Chemical Analysis</string>
     <string name="title_section2">Water Reading</string>
     <string name="title_section3">Incident Gallery</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -24,7 +24,7 @@
     <string name="noDescriptionAdded">No description added</string>
     <string name="noContactDetailsAdded">No contact details added</string>
     <string name="contactDetailsAdded">Contact details added</string>
-    <string name="submit_pollution_event">Submit Incident</string>
+    <string name="submit_pollution_event">Submit Water Quality Analysis Strip</string>
     <string name="view_submission_gallery">View Incidents</string>
     <string name="back">Back</string>
     <string name="done">Done</string>
@@ -83,6 +83,7 @@
     <string name="loading_images_title">Loading River Pollution Images</string>
     <string name="please_wait">Please wait...</string>
     <string name="main_screen_image"> Main Image </string>
+    <string name="camera_help">Try to line up your strip as close to the template below as possible. The closer it is, the more accurate the reading you will get</string>
 
     <string-array name="drawer_titles">
         <item>Submit Incident</item>

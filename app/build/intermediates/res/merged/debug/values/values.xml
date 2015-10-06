@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="drawer_titles">
         <item>Submit Incident</item>
         <item>Water Reading</item>
         <item>Incident Gallery</item>
     </string-array>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string-array name="layers_array">
     <item>@string/normal</item>
@@ -15,7 +15,7 @@
     <item>@string/satellite</item>
     <item>@string/terrain</item>
   </string-array>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="actionBarDivider"/>
     <attr format="reference" name="actionBarItemBackground"/>
@@ -86,7 +86,7 @@
     <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
     <bool name="abc_split_action_bar_is_narrow">true</bool>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/colour_values.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/colour_values.xml -->
     <eat-comment/>
     <color name="Nitrate0">#FEDCB7</color>
     <color name="Nitrate1">#FFE8DE</color>
@@ -101,18 +101,18 @@
     <color name="Nitrite1">#FFBBD8</color>
     <color name="Nitrite1.5">#FA98BB</color>
     <color name="Nitrite3">#FF8CB9</color>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="back_button_end_colour">#BD3625</color>
     <color name="back_button_start_colour">#EE5F5B</color>
     <color name="background_end">#FFFFFF</color>
     <color name="background_start">#FFFFFF</color>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/common_colors.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/common_colors.xml -->
     <eat-comment/>
     <color name="common_action_bar_splitter">#d2d2d2</color>
     <color name="common_signin_btn_dark_text_default">@android:color/white</color>
@@ -124,7 +124,7 @@
     <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
     <color name="common_signin_btn_light_text_focused">#FF737373</color>
     <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="details_main_text">#4C566C</color>
     <color name="divider_gray">#C5C8D0</color>
@@ -142,7 +142,7 @@
     <color name="riverWatch_selectbutton_end_colour">#F89406</color>
     <color name="riverWatch_selectbutton_start_colour">#FBB450</color>
     <color name="submit_report_button_text">#51A351</color>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_colors.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_colors.xml -->
     <eat-comment/>
     <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
     <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
@@ -177,7 +177,7 @@
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/></declare-styleable>
     <declare-styleable name="WalletFragmentOptions"><attr format="enum" name="theme"><enum name="holo_dark" value="0"/><enum name="holo_light" value="1"/></attr><attr format="enum" name="environment"><enum name="production" value="1"/><enum name="sandbox" value="0"/><enum name="strict_sandbox" value="2"/></attr><attr format="reference" name="fragmentStyle"/><attr format="enum" name="fragmentMode"><enum name="buyButton" value="1"/><enum name="selectionDetails" value="2"/></attr></declare-styleable>
     <declare-styleable name="WalletFragmentStyle"><attr format="dimension" name="buyButtonHeight"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="dimension" name="buyButtonWidth"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="enum" name="buyButtonText"><enum name="buy_with_google" value="1"/><enum name="buy_now" value="2"/><enum name="book_now" value="3"/></attr><attr format="enum" name="buyButtonAppearance"><enum name="classic" value="1"/><enum name="grayscale" value="2"/><enum name="monochrome" value="3"/></attr><attr format="reference" name="maskedWalletDetailsTextAppearance"/><attr format="reference" name="maskedWalletDetailsHeaderTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsBackground"/><attr format="reference" name="maskedWalletDetailsButtonTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsButtonBackground"/><attr format="color" name="maskedWalletDetailsLogoTextColor"/><attr format="enum" name="maskedWalletDetailsLogoImageType"><enum name="classic" value="1"/><enum name="monochrome" value="2"/></attr></declare-styleable>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_default_height">48dip</dimen>
     <dimen name="abc_action_bar_icon_vertical_padding">8dip</dimen>
@@ -196,20 +196,20 @@
     <dimen name="abc_panel_menu_list_width">296dp</dimen>
     <dimen name="abc_search_view_preferred_width">320dip</dimen>
     <dimen name="abc_search_view_text_min_width">160dip</dimen>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
     <item name="dialog_fixed_width_major" type="dimen">320dp</item>
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="navigation_drawer_width">240dp</dimen>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_menu_divider" type="id"/>
@@ -218,13 +218,13 @@
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
     <integer name="abc_max_action_buttons">2</integer>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/version.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/version.xml -->
     <eat-comment/>
     <integer name="google_play_services_version">4452000</integer>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="Submit_Activity">Submit Activity</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
@@ -239,36 +239,37 @@
     <string name="abc_searchview_description_voice">Voice search</string>
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="alpha">Alpha</string>
     <string name="animate">Animate</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">River Watch</string>
     <string name="back">Back</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="basic_description">Launches a map</string>
     <string name="basic_map">Basic Map</string>
     <string name="camera_demo">Camera</string>
     <string name="camera_description">Demonstrates camera functions.</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="camera_help">Try to line up your strip as close to the template below as possible. The closer it is, the more accurate the reading you will get</string>
     <string name="capture_image">Capture Image</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="circle_demo">Circles</string>
     <string name="circle_description">Demonstrates how to add Circles to a map.</string>
     <string name="clear_map">Clear</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/com_crashlytics_export_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/com_crashlytics_export_strings.xml -->
     <eat-comment/>
     <string name="com.crashlytics.android.build_id">375c1841-8a6d-4adc-b9a1-2da654db985e</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/common_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/common_strings.xml -->
     <eat-comment/>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable Google Play services</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text">This app won\'t work unless you enable Google Play services.</string>
@@ -295,93 +296,93 @@
     <string msgid="1788179980625863495" name="common_google_play_services_update_title">Update Google Play services</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="compass">Compass</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="contactDetailsAdded">Contact details added</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="custom_info_contents">Custom info contents</string>
     <string name="custom_info_window">Custom info window</string>
     <string name="default_info_window">Default info window</string>
     <string name="demo_title">Google Maps API Demos</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="description_labeltitle"> Enter Image Description </string>
     <string name="description_title">Describe Incident</string>
     <string name="done">Done</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="down_arrow">\u2193</string>
     <string name="drag_melbourne">Drag Melbourne</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="errorInGeoCoding">Unable to convert address to location coordinates</string>
     <string name="errorInReverseGeoCoding">Unable to convert location coordinates to address</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="events_demo">Events</string>
     <string name="events_description">Demonstrates event handling.</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="failed_camera_please_try_again">Failed to save image, please try again</string>
     <string name="failed_to_connect_to_camera_message">Failed to open camera. Please try again later</string>
     <string name="failure_load_images_msg">Failed to obtain river pollution images. Please try again later.</string>
     <string name="failure_submission_msg">Your incident submission was unsuccessful. Please try again later.</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="fill_alpha">Fill Alpha</string>
     <string name="fill_hue">Fill Hue</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="geocoordinates_text">Geocoordinate location:</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="go_to_bondi">Go to Bondi</string>
     <string name="go_to_sydney">Go to Sydney</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="gps_message">Your GPS seems to be disabled, do you want to
 		enable it?</string>
     <string name="gps_message_submission">Submitting a pollution event uses GPS to tag your location. However your GPS seems to be disabled, do you want to
 		enable it?</string>
     <string name="gps_no_location_message">Cannot convert geo coordinates to a valid address. Please continue</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="groundoverlay_demo">Ground Overlays</string>
     <string name="groundoverlay_description">Demonstrates how to add a GroundOverlay to a map.</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="hello_world">Hello world!</string>
     <string name="home">Home</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="hue">Hue</string>
     <string name="hybrid">Hybrid</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="incident_view_gallery_title">Gallery</string>
     <string name="incident_view_grid_title">Incident Gallery </string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="layers_demo">Layers</string>
     <string name="layers_description">Demonstrates the different map layers.</string>
     <string name="left_arrow">\u2190</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="loading_images_title">Loading River Pollution Images</string>
     <string name="locationTitle">Record Location</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="locationsource_demo">Location Source Demo</string>
     <string name="locationsource_description">Demonstrates how to use a custom location source.</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="main_screen_image"> Main Image </string>
     <string name="map_not_ready">Map is not ready yet</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="marker_demo">Markers</string>
     <string name="marker_description">Demonstrates how to add Markers to a map.</string>
@@ -391,7 +392,7 @@
     <string name="my_location">My Location</string>
     <string name="mylocation_button">MyLocation Button</string>
     <string name="mylocation_layer">MyLocation Layer</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -404,21 +405,21 @@
     <string name="noDescriptionEntered">No Description Entered</string>
     <string name="noLocationRecorded">No location recorded</string>
     <string name="noPhotoAdded">No photo added</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="no_demos">No demos</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="no_internet_message">No internet connection detected, do you want to
 		enable it?</string>
     <string name="no_preview_available">No Preview Available</string>
     <string name="nocoordinates">No Coordinates (Lat,Lon) found</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="normal">Normal</string>
     <string name="options_demo">Options</string>
     <string name="options_description">Demonstrates how to use Options to initialize a map.</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="pleaseChooseTags">Please choose image tag(s) </string>
     <string name="pleaseCompleteAllSteps">Please complete all steps before submitting your incident</string>
@@ -426,13 +427,13 @@
     <string name="pleaseEnterDescription">Please enter a description of the problem</string>
     <string name="please_select_a_image">Please select an Image</string>
     <string name="please_wait">Please wait...</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="polygon_demo">Polygons</string>
     <string name="polygon_description">Demonstrates how to add Polygons to a map.</string>
     <string name="polyline_demo">Polylines</string>
     <string name="polyline_description">Demonstrates how to add Polylines to a map.</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="positive_button_title">Yes</string>
     <string name="preview_description"> Description</string>
@@ -444,7 +445,7 @@
     <string name="preview_nitratetitle">Nitrate</string>
     <string name="preview_nitritetitle">Nitrite</string>
     <string name="preview_title">Preview Incident</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="programmatic_demo">Programmatically add map</string>
     <string name="programmatic_description">Demonstrates how to add a MapFragment programmatically.</string>
@@ -460,7 +461,7 @@
     <string name="rotate">Rotate Gestures</string>
     <string name="satellite">Satellite</string>
     <string name="scroll">Scroll Gestures</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="select_image_from_gallery">Select Image From Gallery</string>
     <string name="select_image_title">Select Image</string>
@@ -468,64 +469,64 @@
     <string name="sending_incident_msg">Submitting your river pollution incident...</string>
     <string name="sending_incident_msg_please_wait">Please wait</string>
     <string name="sending_incident_title">Incident Submission</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="stop_animation">\u25A0</string>
     <string name="stroke_width">Stroke Width</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="submit">Submit Incident</string>
-    <string name="submit_pollution_event">Submit Incident</string>
+    <string name="submit_pollution_event">Submit Water Quality Analysis Strip</string>
     <string name="submit_start">Start</string>
     <string name="success_submission_msg">You have succesfully submitted a river pollution incident.</string>
     <string name="tag_labeltitle"> Select Image Tags </string>
     <string name="take_picture_title">Capture Image</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="tap_instructions">Tap or long press on the map</string>
     <string name="terrain">Terrain</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="thisIsTheLocationFound">This is the location found</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="tile_overlay_demo">Tile Overlays</string>
     <string name="tile_overlay_description">Demonstrates how to add a tile overlay to a map.</string>
     <string name="tilt">Tilt Gestures</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="title_activity_blank">BlankActivity</string>
-    <string name="title_section1">Submit Incident</string>
+    <string name="title_section1">WaiNZ Chemical Analysis</string>
     <string name="title_section2">Water Reading</string>
     <string name="title_section3">Incident Gallery</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="traffic">Traffic</string>
     <string name="transparency">Transparency</string>
     <string name="uisettings_demo">UI Settings</string>
     <string name="uisettings_description">Demonstrates how to alter user interface settings.</string>
     <string name="up_arrow">\u2191</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="userAddress">Address</string>
     <string name="view_submission_gallery">View Incidents</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_strings.xml -->
     <eat-comment/>
     <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="width">Width</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="wouldYouLikeToUpdate">Would you like to update your position?</string>
     <string name="wouldYouLikeToUpdateStill">Would you like to update your location?</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/demo_strings.xml -->
     <eat-comment/>
     <string name="zoom_buttons">Zoom Buttons</string>
     <string name="zoom_gestures">Zoom Gestures</string>
     <string name="zoom_in">+</string>
     <string name="zoom_out">-</string>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!--
@@ -534,7 +535,7 @@
             backward-compatibility can go here.
         -->
     </style>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/styles_customstyle.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/styles_customstyle.xml -->
     <eat-comment/>
     <style name="CustomStyle" parent="@style/Theme.AppCompat.Light">
         <item name="actionBarStyle">@style/MyActionBar</item>
@@ -542,7 +543,7 @@
     <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
         <item name="android:background">#5BC0DE</item>
     </style>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.AppCompat.Base.CompactMenu.Dialog" parent="android:TextAppearance.Medium">
         <item name="android:textColor">@android:color/primary_text_light</item>
@@ -905,7 +906,7 @@
     </style>
     <style name="Theme.Base.AppCompat.Light.DialogWhenLarge" parent="Theme.Base.AppCompat.Light"/>
     <style name="Theme.Base.Light" parent="android:Theme.Light"/>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_styles.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/res/values/wallet_styles.xml -->
     <eat-comment/>
     <style name="WalletFragmentDefaultButtonTextAppearance">
         <item name="android:textColor">@color/wallet_primary_text_holo_light</item>
@@ -939,7 +940,7 @@
         <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
         <item name="maskedWalletDetailsLogoImageType">classic</item>
     </style>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Widget.AppCompat.Base.ActionBar"/>
     <style name="Widget.AppCompat.ActionBar.Solid" parent="Widget.AppCompat.Base.ActionBar.Solid"/>
@@ -1155,7 +1156,7 @@
     <style name="Widget.AppCompat.ProgressBar" parent="Widget.AppCompat.Base.ProgressBar"/>
     <style name="Widget.AppCompat.ProgressBar.Horizontal" parent="Widget.AppCompat.Base.ProgressBar.Horizontal"/>
     <style name="Widget.AppCompat.Spinner.DropDown.ActionBar" parent="Widget.AppCompat.Base.Spinner"/>
-    <!-- From: file:/Users/glenpeek/Documents/GitHub/Riverwatch/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/Documents/GitHub/Riverwatch/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="backButtonStyle" parent="@style/buttonStyle">
         <item name="android:layout_gravity">left|center_vertical</item>
