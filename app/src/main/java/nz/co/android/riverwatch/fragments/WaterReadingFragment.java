@@ -4,10 +4,20 @@ import nz.co.android.cowseye2.R;
 import nz.co.android.riverwatch.activity.MainScreenActivity;
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.app.Fragment;
+import android.text.format.DateFormat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
+
+import java.io.File;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 public class WaterReadingFragment extends Fragment{
 	/**
@@ -30,7 +40,28 @@ public class WaterReadingFragment extends Fragment{
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.coming_soon_layout, container, false);
+		super.onCreate(savedInstanceState);
+		TableLayout tableLayout = new TableLayout(this.getActivity().getApplicationContext());
+		TableRow tableRow;
+		TextView textView;
+		File dir = new File(Environment.getExternalStorageDirectory() + "/PhotoAR/");
+		File[] filelist = dir.listFiles();
+//			f.getName()
+//		{ // do your stuff here }
+		for (File f : filelist){
+			tableRow = new TableRow(this.getActivity().getApplicationContext());
+			textView = new TextView(this.getActivity().getApplicationContext());
+			Calendar cal = Calendar.getInstance(Locale.ENGLISH);
+			cal.setTimeInMillis(new Long(f.getName().replace(".jpg","")));
+			String date = DateFormat.format("dd-MM-yyyy hh:mm:ss", cal).toString();
+			textView.setText(date);
+			textView.setPadding(20, 20, 20, 20);
+			tableRow.addView(textView);
+			tableLayout.addView(tableRow);
+		}
+//		setContentView(tableLayout);
+		View rootView = tableLayout;
+//		View rootView = inflater.inflate(R.layout.coming_soon_layout, container, false);
 		return rootView;
 	}
 

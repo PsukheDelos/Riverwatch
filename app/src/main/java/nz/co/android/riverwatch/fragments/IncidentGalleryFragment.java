@@ -9,6 +9,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
 
 public class IncidentGalleryFragment extends Fragment{
 	/**
@@ -31,7 +34,24 @@ public class IncidentGalleryFragment extends Fragment{
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.coming_soon_layout, container, false);
+		super.onCreate(savedInstanceState);
+		TableLayout tableLayout = new TableLayout(this.getActivity().getApplicationContext());
+		TableRow tableRow;
+		TextView textView;
+
+		for (int i = 0; i < 4; i++) {
+			tableRow = new TableRow(this.getActivity().getApplicationContext());
+			for (int j = 0; j < 3; j++) {
+				textView = new TextView(this.getActivity().getApplicationContext());
+				textView.setText("test");
+				textView.setPadding(20, 20, 20, 20);
+				tableRow.addView(textView);
+			}
+			tableLayout.addView(tableRow);
+		}
+//		setContentView(tableLayout);
+		View rootView = tableLayout;
+//		View rootView = inflater.inflate(R.layout.coming_soon_layout, container, false);
 		return rootView;
 	}
 
