@@ -323,4 +323,6 @@ public class RiverWatchApplication extends Application  {
 	    int idx = cursor.getColumnIndex(MediaColumns.DATA);
 	    return cursor.getString(idx);
 	}
+
+
 }

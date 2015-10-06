@@ -143,12 +143,12 @@ public class MainScreenActivity extends ActionBarActivity implements
 								sc.nextLine();
 
 								build.setImageDescription(sc.nextLine());
-								List<String> tagList = new ArrayList<String>();
-								while (sc.hasNext()) {
-									tagList.add(sc.next());
-								}
-
-								build.setImageTag(tagList);
+//								List<String> tagList = new ArrayList<String>();
+//								while (sc.hasNext()) {
+//									tagList.add(sc.next());
+//								}
+//
+//								build.setImageTag(tagList);
 
 								build.setImagePath(Uri.parse(f.getPath()));
 								Log.d("MSA2",
@@ -557,5 +557,11 @@ public class MainScreenActivity extends ActionBarActivity implements
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onResume() {
+		super.onResume();
+		checkForCachedSubmissions();
 	}
 }

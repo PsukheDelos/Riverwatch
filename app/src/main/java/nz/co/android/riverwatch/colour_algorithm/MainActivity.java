@@ -11,6 +11,7 @@ import android.graphics.Point;
 import android.graphics.Rect;
 import android.hardware.Camera;
 import android.hardware.Camera.PictureCallback;
+import android.media.ExifInterface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -169,6 +170,20 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         catch(IOException e) {
             Log.d("In Saving File", e + "");
         }
+
+            ExifInterface exif = null;
+            try {
+                exif = new ExifInterface(myImage.getCanonicalPath());
+//                exif.setAttribute("UserComment", "Nitrate: " + String.valueOf(analysis.nitrate) + " Nitrite: " + String.valueOf(analysis.nitrite));
+                String message = " - Nitrate: " + String.valueOf(Math.round(analysis.nitrate)) + " Nitrite: " + String.valueOf(Math.round(analysis.nitrite));
+                exif.setAttribute("UserComment", message);
+                exif.saveAttributes();
+                System.err.println("EXIF SUCCESS???" + String.valueOf(analysis.nitrate));
+            } catch (IOException e) {
+                System.err.println("EXIF SAVE FAIL");
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
         camera.startPreview();
 
         left.recycle();
