@@ -53,22 +53,31 @@ public class WaterReadingFragment extends Fragment{
 		File[] filelist = dir.listFiles();
 //			f.getName()
 //		{ // do your stuff here }
-		for (File f : filelist){
+		if(filelist!=null) {
+			for (File f : filelist) {
+				tableRow = new TableRow(this.getActivity().getApplicationContext());
+				textView = new TextView(this.getActivity().getApplicationContext());
+				Calendar cal = Calendar.getInstance(Locale.ENGLISH);
+				cal.setTimeInMillis(Long.valueOf(f.getName().replace(".jpg", "")));
+				String date = DateFormat.format("dd-MM-yyyy hh:mm:ss", cal).toString();
+				ExifInterface exif = null;
+				String message = "";
+				try {
+					exif = new ExifInterface(f.getCanonicalPath());
+					message = exif.getAttribute("UserComment");
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				textView.setText(date + " " + message);
+				textView.setPadding(20, 20, 20, 20);
+				tableRow.addView(textView);
+				tableLayout.addView(tableRow);
+			}
+		}else{
 			tableRow = new TableRow(this.getActivity().getApplicationContext());
 			textView = new TextView(this.getActivity().getApplicationContext());
-			Calendar cal = Calendar.getInstance(Locale.ENGLISH);
-			cal.setTimeInMillis(Long.valueOf(f.getName().replace(".jpg","")));
-			String date = DateFormat.format("dd-MM-yyyy hh:mm:ss", cal).toString();
-			ExifInterface exif = null;
-			String message = "";
-			try {
-				exif = new ExifInterface(f.getCanonicalPath());
-				message = exif.getAttribute("UserComment");
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			textView.setText(date + " " + message);
+			textView.setText("[No Submissions]");
 			textView.setPadding(20, 20, 20, 20);
 			tableRow.addView(textView);
 			tableLayout.addView(tableRow);
