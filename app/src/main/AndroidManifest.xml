@@ -87,6 +87,7 @@
         <activity
             android:name="nz.co.android.riverwatch.colour_algorithm.MainActivity"
             android:label="@string/take_picture_title"
+            android:screenOrientation="portrait"
             android:theme="@style/CustomStyle" >
         </activity>
         <activity
@@ -102,6 +103,7 @@
             android:theme="@style/CustomStyle" >
         </activity>
         <activity android:name=".MainScreenActivity"
+            android:screenOrientation="portrait"
           android:configChanges="orientation"/> 
 
         <meta-data
