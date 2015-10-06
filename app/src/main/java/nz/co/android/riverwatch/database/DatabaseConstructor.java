@@ -19,9 +19,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DatabaseConstructor extends SQLiteOpenHelper{
 
 	//The Android's default system path of your application database.
-	private static String DB_PATH = "/data/data/nz.co.android.cowseye2/files/";
+	private static String DB_PATH;
 	private static String DB_NAME = "River_watch.sqlite";
-	private static String MY_PATH = DB_PATH + DB_NAME;
+	private static String MY_PATH;
 
 	private SQLiteDatabase myDataBase;
 	private final Context myContext;
@@ -36,6 +36,8 @@ public class DatabaseConstructor extends SQLiteOpenHelper{
 	 */
 	public DatabaseConstructor(Context context) {
 		super(context, DB_NAME, null, versionNumber);
+		DB_PATH = context.getFilesDir().getPath();
+		MY_PATH  = DB_PATH + DB_NAME;
 		this.myContext = context;
 	}
 
