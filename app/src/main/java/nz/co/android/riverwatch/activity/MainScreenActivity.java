@@ -395,6 +395,7 @@ public class MainScreenActivity extends ActionBarActivity implements
 		super.onActivityResult(requestCode, resultCode, data);
 
 		// check if error here
+		if(data==null) return;
 		Analysis analysis = (Analysis) data.getSerializableExtra("analysis");
 
 		// Coming from capturing an image from native activity
@@ -517,11 +518,11 @@ public class MainScreenActivity extends ActionBarActivity implements
 			mTitle = getString(R.string.title_section1);
 			break;
 		case 1:
-			mTitle = getString(R.string.title_section2);
-			break;
-		case 2:
 			mTitle = getString(R.string.title_section3);
 			break;
+//		case 2:
+//			mTitle = getString(R.string.title_section3);
+//			break;
 		}
 	}
 
