@@ -204,14 +204,14 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         Camera.Parameters parameters = camera.getParameters();
         Display display = ((WindowManager)getSystemService(WINDOW_SERVICE)).getDefaultDisplay();
 
-        Toast.makeText(getApplicationContext(), "" + display.getRotation(), Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(), "" + display.getRotation(), Toast.LENGTH_LONG).show();
 
         //We always assume the Rotation is 0
         parameters.setPreviewSize(height, width);
         camera.setDisplayOrientation(90);
 
         camera.cancelAutoFocus();
-        Toast.makeText(getApplicationContext(), "" + stripOverlay.getStripRectangle(), Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(), "" + stripOverlay.getStripRectangle(), Toast.LENGTH_LONG).show();
         parameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE);
         Camera.Area focusArea = new Camera.Area(stripOverlay.getStripRectangle(), 1000);
         List<Camera.Area> focusAreas = new ArrayList<Camera.Area>();

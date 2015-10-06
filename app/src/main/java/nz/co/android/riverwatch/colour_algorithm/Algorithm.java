@@ -88,9 +88,9 @@ public class Algorithm {
 		double nitriteProb = invNitrite1 / (invNitrite1 + invNitrite2);
 
 
-
-		Toast.makeText(c, "Nitrate Class: " + (bestNitrateClass * nitrateProb + secondBestNitrateClass * (1 - nitrateProb)), Toast.LENGTH_LONG).show();
-		Toast.makeText(c, "Nitrite Class: " + (bestNitriteClass * nitriteProb + secondBestNitriteClass * (1 - nitriteProb)), Toast.LENGTH_LONG).show();
+		// UNCOMMENT THESE TO SHOW NITRITE/NITRATE LEVELS AS A TOAST
+		//Toast.makeText(c, "Nitrate Class: " + (bestNitrateClass * nitrateProb + secondBestNitrateClass * (1 - nitrateProb)), Toast.LENGTH_LONG).show();
+		//Toast.makeText(c, "Nitrite Class: " + (bestNitriteClass * nitriteProb + secondBestNitriteClass * (1 - nitriteProb)), Toast.LENGTH_LONG).show();
 
 		analysis.nitrite = (bestNitriteClass * nitriteProb + secondBestNitriteClass * (1 - nitriteProb));
 		analysis.nitrate = (bestNitrateClass * nitrateProb + secondBestNitrateClass * (1 - nitrateProb));

@@ -10,37 +10,13 @@
         android:layout_height="wrap_content"
         android:padding="20dp">
 
-    </FrameLayout>
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <EditText
-            android:id="@+id/descriptionText"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:inputType="textMultiLine"
-            android:singleLine="false"
-            android:windowSoftInputMode="stateHidden"
-            android:padding="20dp"
-            android:alpha="0.8"
-            android:background="@color/riverWatch_button_start_colour"
-            android:gravity="top"
-            android:hint="@string/description_labeltitle"
-            android:textColor="#ffffff"
-            android:textIsSelectable="false"
-            android:editable="true">
-        </EditText>
-
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Please enter a description for your reading below:"
+            android:text="Please enter a description of your reading below:"
             android:id="@+id/textView"
-            android:background="#0e788f"
+            android:background="@color/header_end"
             android:textColor="#ffffff"
             android:textAlignment="center"
             android:gravity="center"
@@ -50,7 +26,34 @@
             android:alpha="0.8"
             android:singleLine="true"
             android:layout_gravity="center_horizontal|top" />
+    </FrameLayout>
 
-    </GridLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingTop="0dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/descriptionText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:windowSoftInputMode="stateHidden"
+            android:padding="10dp"
+            android:alpha="0.8"
+            android:background="@color/riverWatch_button_start_colour"
+            android:gravity="top"
+            android:hint="@string/description_labeltitle"
+            android:textColor="#010101"
+            android:textIsSelectable="false"
+            android:editable="true"
+            android:textColorHint="#3f3f3f">
+        </EditText>
+    </FrameLayout>
 
 </LinearLayout>
