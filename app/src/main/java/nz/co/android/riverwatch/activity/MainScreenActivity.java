@@ -395,6 +395,7 @@ public class MainScreenActivity extends ActionBarActivity implements
 		super.onActivityResult(requestCode, resultCode, data);
 
 		// check if error here
+		if(data==null) return;
 		Analysis analysis = (Analysis) data.getSerializableExtra("analysis");
 
 		// Coming from capturing an image from native activity
