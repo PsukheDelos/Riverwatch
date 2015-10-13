@@ -5,30 +5,95 @@
     android:background="@drawable/new_river_bg"
     android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/button"
-        style="@style/riverWatchButtonStyle"
-        android:layout_width="fill_parent"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="SelectTagButtonClick"
-        android:text="Select Image Tags" >
-    </Button>
+        android:padding="20dp">
 
-    <TextView
-        android:id="@+id/EnterDescriptionLabel"
-        style="@style/text_view_style"
-        android:paddingTop="10dp"
-        android:text="@string/description_labeltitle" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Please enter a description of your reading below:"
+            android:id="@+id/textView"
+            android:background="@color/header_end"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="italic"
+            android:typeface="sans"
+            android:alpha="0.8"
+            android:singleLine="true"
+            android:layout_gravity="center_horizontal|top" />
 
-    <EditText
-        android:id="@+id/descriptionText"
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="top"
-        android:inputType="textMultiLine"
-        android:singleLine="false"
-        android:windowSoftInputMode="stateHidden" >
-    </EditText>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/header_end"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nitrate"
+                android:id="@+id/nitrate_value"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="0dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nitrite:"
+                android:id="@+id/nitrite_value"
+                android:paddingRight="20dp"
+                android:gravity="center_vertical|right"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingTop="0dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/descriptionText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:windowSoftInputMode="stateHidden"
+            android:padding="10dp"
+            android:alpha="0.8"
+            android:background="@color/header_end"
+            android:gravity="top"
+            android:hint="@string/description_labeltitle"
+            android:textColor="#ffffff"
+            android:textIsSelectable="false"
+            android:editable="true"
+            android:textColorHint="#bdbdbd">
+        </EditText>
+    </FrameLayout>
 
 </LinearLayout>

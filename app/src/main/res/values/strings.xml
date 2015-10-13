@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="title_section1">Submit Incident</string>
-    <string name="title_section2">Water Reading</string>
-    <string name="title_section3">Incident Gallery</string>
+    <string name="title_section1">River Watch Chemical Analysis</string>
+    <!--<string name="title_section2">Water Reading</string>-->
+    <string name="title_section3">Analysis Result Gallery</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
@@ -13,30 +13,29 @@
     <string name="title_activity_blank">BlankActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="submit_start">Start</string>
-    <string name="app_name">River Watch</string>
+    <string name="app_name">River Watch Chemical Analysis</string>
     <string name="capture_image">Capture Image</string>
     <string name="select_location">Select Location</string>
-    <string name="description_labeltitle"> Enter Image Description </string>
+    <string name="description_labeltitle"><i>Enter a description of your analysis result, including such as any lighting issues, anomalies or other information you feel can aid in reading this data</i> </string>
     <string name="tag_labeltitle"> Select Image Tags </string>
-    <string name="submit">Submit Incident</string>
+    <string name="submit">Submit Analysis Result</string>
     <string name="noPhotoAdded">No photo added</string>
     <string name="noLocationRecorded">No location recorded</string>
     <string name="noDescriptionAdded">No description added</string>
     <string name="noContactDetailsAdded">No contact details added</string>
     <string name="contactDetailsAdded">Contact details added</string>
-    <string name="submit_pollution_event">Submit Incident</string>
-    <string name="view_submission_gallery">View Incidents</string>
+    <string name="submit_pollution_event">Submit new Test Strip result</string>
+    <string name="view_submission_gallery">View past Test Strip results</string>
     <string name="back">Back</string>
     <string name="done">Done</string>
     <string name="next">Next</string>
-    <string name="description_title">Describe Incident</string>
+    <string name="description_title">Describe Analysis</string>
     <string name="noDescriptionEntered">No Description Entered</string>
     <string name="please_select_a_image">Please select an Image</string>
     <string name="pleaseEnterDescription">Please enter a description of the problem</string>
-    <string name="pleaseChooseTags">Please choose image tag(s) </string>
     <string name="pleaseEnterAddress">Please enter an address</string>
     <string name="nocoordinates">No Coordinates (Lat,Lon) found</string>
-    <string name="gps_message_submission">Submitting a pollution event uses GPS to tag your location. However your GPS seems to be disabled, do you want to
+    <string name="gps_message_submission">Submitting an analysis result uses GPS to tag your location. However your GPS seems to be disabled, do you want to
 		enable it?</string>
     <string name="gps_message">Your GPS seems to be disabled, do you want to
 		enable it?</string>
@@ -54,7 +53,7 @@
     <string name="noAddressFound">No address found at location:</string>
     <string name="wouldYouLikeToUpdateStill">Would you like to update your location?</string>
     <string name="errorInGeoCoding">Unable to convert address to location coordinates</string>
-    <string name="pleaseCompleteAllSteps">Please complete all steps before submitting your incident</string>
+    <string name="pleaseCompleteAllSteps">Please complete all steps before submitting your chemical result</string>
     <string name="select_image_title">Select Image</string>
     <string name="preview_title">Preview Incident</string>
     <string name="preview_image">Image</string>
@@ -63,6 +62,8 @@
     <string name="preview_description"> Description</string>
     <string name="preview_imagetag"> Image Tag </string>
     <string name="preview_imagetagtitle"> Tag </string>
+    <string name="preview_nitratetitle">Nitrate</string>
+    <string name="preview_nitritetitle">Nitrite</string>
     <string name="map_not_ready">Map is not ready yet</string>
     <string name="no_preview_available">No Preview Available</string>
     <string name="select_image_from_gallery">Select Image From Gallery</string>
@@ -72,19 +73,20 @@
     <string name="failed_camera_please_try_again">Failed to save image, please try again</string>
     <string name="failed_to_connect_to_camera_message">Failed to open camera. Please try again later</string>
     <string name="geocoordinates_text">Geocoordinate location:</string>
-    <string name="success_submission_msg">You have succesfully submitted a river pollution incident.</string>
-    <string name="failure_submission_msg">Your incident submission was unsuccessful. Please try again later.</string>
-    <string name="failure_load_images_msg">Failed to obtain river pollution images. Please try again later.</string>
-    <string name="sending_incident_title">Incident Submission</string>
+    <string name="success_submission_msg">You have successfully submitted a new analysis result!</string>
+    <string name="failure_submission_msg">Your analysis submission was unsuccessful. Please try again later.</string>
+    <string name="failure_load_images_msg">Failed to obtain chemical analysis images. Please try again later.</string>
+    <string name="sending_incident_title">Chemical Analysis Submission</string>
     <string name="sending_incident_msg">Submitting your river pollution incident...</string>
     <string name="sending_incident_msg_please_wait">Please wait</string>
-    <string name="loading_images_title">Loading River Pollution Images</string>
+    <string name="loading_images_title">Loading Chemical Analysis Images</string>
     <string name="please_wait">Please wait...</string>
     <string name="main_screen_image"> Main Image </string>
+    <string name="camera_help">Try to line up your strip as close to the template below as possible. The closer it is, the more accurate the reading you will get</string>
 
     <string-array name="drawer_titles">
         <item>Submit Incident</item>
-        <item>Water Reading</item>
+        <!--<item>Water Reading</item>-->
         <item>Incident Gallery</item>
     </string-array>
 

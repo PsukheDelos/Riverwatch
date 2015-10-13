@@ -43,33 +43,33 @@
             android:text="@string/preview_location" />
 
         <TextView
-            android:id="@+id/PreviewImageTagTitle"
+            android:id="@+id/PreviewNitrateTitle"
             style="@style/field_title_style"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
-            android:text="@string/preview_imagetagtitle" />
+            android:text="@string/preview_nitratetitle" />
 
         <TextView
-            android:id="@+id/PreviewImageTag"
+            android:id="@+id/PreviewNitrateValue"
             style="@style/text_view_style"
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
-            android:text="@string/preview_imagetag" />
+            />
 
         <TextView
-            android:id="@+id/PreviewDescriptionTitle"
+            android:id="@+id/PreviewNitriteTitle"
             style="@style/field_title_style"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
-            android:text="@string/preview_descriptiontitle" />
+            android:text="@string/preview_nitritetitle" />
 
         <TextView
-            android:id="@+id/PreviewDescriptionText"
+            android:id="@+id/PreviewNitriteValue"
             style="@style/text_view_style"
             android:layout_gravity="center_horizontal"
             android:maxLines="5"
             android:scrollbars="vertical"
-            android:text="@string/preview_description" />
+            />
 
         <Button
             android:id="@+id/submit_button"
