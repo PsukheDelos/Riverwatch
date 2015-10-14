@@ -119,6 +119,14 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         Rect midR = captureRectangles.get("middleCaptureRectangle");
         Rect rightR = captureRectangles.get("rightCaptureRectangle");
 
+//        System.err.println("Left: " + leftR.left);
+//        System.err.println("Top: " + leftR.top);
+//        System.err.println("Width: " + leftR.width());
+//        System.err.println("Height: " + leftR.height());
+//
+//        System.err.println("Bitmap Height: " + cameraBitmap.getHeight());
+//        System.err.println("Bitmap Width: " + cameraBitmap.getWidth());
+
         Bitmap left = Bitmap.createBitmap(cameraBitmap, leftR.left, leftR.top, leftR.width(), leftR.height());
         Bitmap middle = Bitmap.createBitmap(cameraBitmap, midR.left, midR.top, midR.width(), midR.height());
         Bitmap right = Bitmap.createBitmap(cameraBitmap, rightR.left, rightR.top, rightR.width(), rightR.height());
@@ -186,16 +194,10 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
             }
         camera.startPreview();
 
-        left.recycle();
-        right.recycle();
-        middle.recycle();
+//        left.recycle();
+//        right.recycle();
+//        middle.recycle();
         newImage.recycle();
-
-        //	        Intent intent = new Intent();
-        //	        intent.setAction(Intent.ACTION_VIEW);
-        //
-        //	        intent.setDataAndType(Uri.parse("file://" + myImage.getAbsolutePath()), "image/*");
-        //	        startActivity(intent);
 
         //clean this up
         View p = findViewById(R.id.progressBar);
@@ -219,21 +221,29 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         Camera.Parameters parameters = camera.getParameters();
         Display display = ((WindowManager)getSystemService(WINDOW_SERVICE)).getDefaultDisplay();
 
-        //Toast.makeText(getApplicationContext(), "" + display.getRotation(), Toast.LENGTH_LONG).show();
-
         //We always assume the Rotation is 0
+        System.err.println("surfaceChanged Height: " + height);
+        System.err.println("surfaceChanged Width: " + width);
+
         parameters.setPreviewSize(height, width);
+        parameters.setPictureSize(height, width);
         camera.setDisplayOrientation(90);
 
-        camera.cancelAutoFocus();
+        /**
+         * Below is code that was to deal with the focus issues.  While our algorithm does not require that the strip
+         * image be in focus, it would be ideal from a user stand point as users may feel uneasy when confronted with a
+         * blurry image.  Also, on the far end, having a nice clear, crisp image of the test strip would be nice from
+         * a human readability perspective.  However, at this time, we have had not been able to fully debug this issue.
+         */
+//        camera.cancelAutoFocus();
         //Toast.makeText(getApplicationContext(), "" + stripOverlay.getStripRectangle(), Toast.LENGTH_LONG).show();
-        parameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE);
-        Camera.Area focusArea = new Camera.Area(stripOverlay.getStripRectangle(), 1000);
-        List<Camera.Area> focusAreas = new ArrayList<Camera.Area>();
-        focusAreas.add(focusArea);
+//        parameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE);
+//        Camera.Area focusArea = new Camera.Area(stripOverlay.getStripRectangle(), 1000);
+//        List<Camera.Area> focusAreas = new ArrayList<Camera.Area>();
+//        focusAreas.add(focusArea);
         //		parameters.setFocusAreas(focusAreas);
 
-        //		camera.setParameters(parameters);
+        camera.setParameters(parameters);
         previewCamera();
     }
 
